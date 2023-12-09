@@ -4,64 +4,63 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
-    private GameObject player;
-    private FloatingHealthBar healthBar;
+    protected GameObject player;
+    protected FloatingHealthBar healthBar;
+    [SerializeField] protected WeaponController weapon;
+    protected int maxHealth = 100;
+    [SerializeField] protected int currentHealth = 100;
+    protected float movementSpeed = 3.0f;
+    [SerializeField] protected float range = 0.8f;
 
-    private int maxHealth = 100;
-    [SerializeField] private int currentHealth = 100;
+    protected float distance;
 
-    private float movementSpeed = 3.0f;
-    private int range = 5;
-    
-
-    private float distance;
-
-    private void Awake()
+    protected void Awake()
     {
         healthBar = GetComponentInChildren<FloatingHealthBar>();
-    }
-
-    private void Start()
-    {
         player = GameObject.Find("Player");
-        InvokeRepeating("LoseHealthOverTime", 1f, 1f);
+
     }
 
-    private void Update()
+    // Start is called before the first frame update
+    protected virtual void Start()
     {
+        
     }
 
-    private void FixedUpdate()
-    {        
+    // Update is called once per frame
+    protected virtual void Update()
+    {
         healthBar.UpdateHealthBar(currentHealth, maxHealth);
 
         distance = Vector2.Distance(player.transform.position, transform.position);
         if (distance > range)
         {
             Move();
+            FlipBasedOnDirection();
         }
-
     }
 
     private void Move()
     {
-        Vector2 direction = player.transform.position - transform.position;
+        Vector2 direction = (player.transform.position - transform.position).normalized;
         transform.position = Vector2.MoveTowards(this.transform.position, player.transform.position, movementSpeed * Time.deltaTime);
+
     }
 
-    void LoseHealthOverTime()
+    private void FlipBasedOnDirection()
     {
-        // Adjust the amount of health you want to lose per second
-        int healthLossPerSecond = 10;
+        Vector2 direction = (player.transform.position - transform.position).normalized;
 
-        // Ensure the character doesn't go below 0 health
-        currentHealth = Mathf.Max(0, currentHealth - healthLossPerSecond);
-
-        // Check if the character has run out of health
-        if (currentHealth == 0)
+        // Flip the character based on the direction
+        if (direction.x > 0)
         {
-            Destroy(gameObject);
-           
+            this.transform.rotation = Quaternion.Euler(0, 180, 0);
         }
+        else
+        {
+            this.transform.rotation = Quaternion.Euler(0, 0, 0);
+
+        }
+
     }
 }
