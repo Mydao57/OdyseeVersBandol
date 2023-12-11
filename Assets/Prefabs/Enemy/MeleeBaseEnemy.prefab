@@ -410,6 +410,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weapon: {fileID: 1366821587689379429}
   currentHealth: 100
+  range: 0.8
 --- !u!61 &7311142576974103058
 BoxCollider2D:
   m_ObjectHideFlags: 0

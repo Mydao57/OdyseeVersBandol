@@ -14,6 +14,6 @@ public class SuitcaseBehaviour : ProjectileWeaponBehaviour
 
     private void Update()
     {
-        transform.position += direction * sc.speed * Time.deltaTime;
+        transform.position += direction.normalized * sc.speed * Time.deltaTime;
     }
 }
