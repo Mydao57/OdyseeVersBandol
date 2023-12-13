@@ -17,7 +17,7 @@ public class EnemyController : MonoBehaviour
     protected void Awake()
     {
         healthBar = GetComponentInChildren<FloatingHealthBar>();
-        player = GameObject.Find("Player");
+        player = GameObject.FindGameObjectWithTag("Player");
 
     }
 
@@ -33,10 +33,13 @@ public class EnemyController : MonoBehaviour
         healthBar.UpdateHealthBar(currentHealth, maxHealth);
 
         distance = Vector2.Distance(player.transform.position, transform.position);
+
+        FlipBasedOnDirection();
+
         if (distance > range)
         {
             Move();
-            FlipBasedOnDirection();
+            
         }
     }
 

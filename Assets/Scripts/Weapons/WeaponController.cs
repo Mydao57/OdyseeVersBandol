@@ -32,4 +32,6 @@ public class WeaponController : MonoBehaviour
     public virtual void Attack(Vector3 direction)
     {
     }
+
+
 }

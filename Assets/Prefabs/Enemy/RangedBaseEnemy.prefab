@@ -280,8 +280,8 @@ Transform:
   m_GameObject: {fileID: 6706442190334387735}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.42, y: -2.5850363, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalPosition: {x: -0.65, y: -1.48, z: 0}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5206773348890835058}
@@ -328,7 +328,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 423233894, guid: d4b58aba81f35034b9bb3085841f1aa8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -402,7 +402,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 7323487464472900732, guid: 525f5343176b9ed4b979e234b22d6eb0, type: 3}
   weaponCollider: {fileID: 0}
-  damage: 0
+  damage: 1
   speed: 7
   cooldownDuration: 2
   currentCooldown: 0
@@ -447,7 +447,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 6a597126795abce428fc53b274fd622e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

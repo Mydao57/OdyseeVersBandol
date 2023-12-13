@@ -30,7 +30,9 @@ public class SuitcaseController : WeaponController
         if (currentCooldown <= 0f)
         {
             GameObject suitcase = Instantiate(prefab);
+            
             suitcase.transform.position = transform.position;
+            suitcase.GetComponent<SuitcaseBehaviour>().damage = damage;
             suitcase.GetComponent<SuitcaseBehaviour>().DirectionChecker(direction);
 
             currentCooldown = cooldownDuration;
