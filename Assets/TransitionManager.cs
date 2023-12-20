@@ -9,6 +9,7 @@ public class TransitionManager : MonoBehaviour
 
     [SerializeField] private GameObject _startingSceneTransition;
     [SerializeField] private GameObject _endingSceneTransition;
+    [SerializeField] private AudioClip soundClip;
 
     // Start is called before the first frame update
     void Start()
@@ -24,8 +25,9 @@ public class TransitionManager : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyUp(KeyCode.Escape))
+        if (Input.GetKeyUp(KeyCode.Return))
         {
+            AudioSource.PlayClipAtPoint(soundClip, Camera.main.transform.position);
             _endingSceneTransition.SetActive(true);
             Invoke(nameof(LoadNextLevel), 1.5f);
             
