@@ -306,12 +306,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 0}
-  weaponCollider: {fileID: 0}
   damage: 2
   speed: 0
+  radius: 0
   cooldownDuration: 2
   currentCooldown: 0
-  pierce: 0
 --- !u!1 &6130158037965621001
 GameObject:
   m_ObjectHideFlags: 0
@@ -530,6 +529,7 @@ GameObject:
   - component: {fileID: 6268283134270875363}
   - component: {fileID: 7281111930786586525}
   - component: {fileID: 7058883719666629940}
+  - component: {fileID: 6284355447089342744}
   m_Layer: 6
   m_Name: MeleeBaseEnemy
   m_TagString: Enemy
@@ -646,7 +646,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weapon: {fileID: 2312447588352121844}
-  currentHealth: 100
+  movementSpeed: 3
   range: 0.8
 --- !u!61 &7058883719666629940
 BoxCollider2D:
@@ -693,3 +693,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.32, y: 0.5}
   m_EdgeRadius: 0
+--- !u!114 &6284355447089342744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8984725801658411976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36c364d6035131c408934b54e0669f1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentHealth: 20

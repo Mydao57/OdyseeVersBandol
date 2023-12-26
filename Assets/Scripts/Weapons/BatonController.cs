@@ -6,46 +6,50 @@ using UnityEngine;
 public class BatonController : WeaponController
 {
     private Animator animator;
-    private GameObject player;
 
-    private void Awake()
+    public override void Attack(Vector3? direction)
     {
-        weaponCollider = GetComponent<Collider2D>();
+        base.Attack(direction);
         animator = GetComponent<Animator>();
-        player = GameObject.FindGameObjectWithTag("Player");
-    }
-    protected override void Start()
-    {
-        base.Start();
+       
 
-    }
-
-    protected override void Update()
-    {
-        base.Update();
-    }
-
-    public override void Attack()
-    {
-        base.Attack();
         if (currentCooldown <= 0f)
         {
             if (animator != null)
             {
                 animator.SetTrigger("Attack");
+
             }
+
+            Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, radius);
+
             currentCooldown = cooldownDuration;
 
-            if (weaponCollider.IsTouching(player.GetComponent<Collider2D>()))
+
+            foreach (Collider2D collider in colliders)
             {
-                player.GetComponent<HealthManager>().TakeDamage(damage);
+                if (collider.gameObject != gameObject)
+                {
+                    if (collider.GetComponent<HealthManager>() && tag != "Player")
+                    {
+                        collider.GetComponent<HealthManager>().TakeDamage(damage);
+                    }
+                    else if (collider.GetComponent<EnemyHealthManager>() && tag != "Enemy")
+                    {
+
+                        collider.GetComponent<EnemyHealthManager>().TakeDamage(damage);
+                    }
+                } 
+               
             }
+
 
         }
     }
 
 
-  
+
+
 
 
 

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class ProjectileWeaponBehaviour : MonoBehaviour
@@ -7,7 +8,6 @@ public class ProjectileWeaponBehaviour : MonoBehaviour
     // Start is called before the first frame update
     protected Vector3 direction;
     public float destroyTime;
-    public float damage;
     protected virtual void Start()
     {
         Destroy(gameObject, destroyTime);
@@ -18,11 +18,6 @@ public class ProjectileWeaponBehaviour : MonoBehaviour
     {
         direction = dir;
     }
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        // Check if the collider that entered the trigger is the player
-        other.gameObject.GetComponent<HealthManager>().TakeDamage(damage);
-        Destroy(gameObject);
-
-    }
+    
+    
 }

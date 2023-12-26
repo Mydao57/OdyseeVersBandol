@@ -5,19 +5,16 @@ using UnityEngine;
 public class EnemyController : MonoBehaviour
 {
     protected GameObject player;
-    protected FloatingHealthBar healthBar;
-    [SerializeField] protected WeaponController weapon;
-    protected int maxHealth = 100;
-    [SerializeField] protected int currentHealth = 100;
-    protected float movementSpeed = 3.0f;
-    [SerializeField] protected float range = 0.8f;
+    [SerializeField] protected WeaponController weapon = null;
+    
+    [SerializeField] protected float movementSpeed = 3.0f;
+    [SerializeField] protected float range;
 
     protected float distance;
 
     protected void Awake()
     {
-        healthBar = GetComponentInChildren<FloatingHealthBar>();
-        player = GameObject.FindGameObjectWithTag("Player");
+        player = GameObject.Find("Player");
 
     }
 
@@ -30,17 +27,19 @@ public class EnemyController : MonoBehaviour
     // Update is called once per frame
     protected virtual void Update()
     {
-        healthBar.UpdateHealthBar(currentHealth, maxHealth);
-
-        distance = Vector2.Distance(player.transform.position, transform.position);
-
-        FlipBasedOnDirection();
-
-        if (distance > range)
+        if (player)
         {
-            Move();
-            
+            distance = Vector2.Distance(player.transform.position, transform.position);
+
+            FlipBasedOnDirection();
+
+            if (distance > range)
+            {
+                Move();
+
+            }
         }
+        
     }
 
     private void Move()

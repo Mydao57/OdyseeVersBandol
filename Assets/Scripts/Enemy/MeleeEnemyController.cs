@@ -13,9 +13,11 @@ public class MeleeEnemyController : EnemyController
     protected override void Update()
     {
         base.Update();
-        if (weapon.weaponCollider.IsTouching(player.GetComponent<Collider2D>()))
+        float distance = Vector2.Distance(transform.position, player.transform.position);
+
+        if (distance <= weapon.radius)
         {
-            weapon.Attack();
+            weapon.Attack(null);
         }
     }
 

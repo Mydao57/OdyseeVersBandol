@@ -11,7 +11,7 @@ public class PlayerMovement : MonoBehaviour
     private float dirX = 0f;
     private float dirY = 0f;
 
-    private enum MovementState { idle, running};
+    private enum MovementState {idle, running};
 
     [SerializeField] private float moveSpeed = 7f;
 
@@ -43,12 +43,12 @@ public class PlayerMovement : MonoBehaviour
         if (dirX > 0f)
         {
             state = MovementState.running;
-            sr.flipX = false;
+            this.transform.rotation = Quaternion.Euler(0, 0, 0);
         }
         else if (dirX < 0f)
         {
             state = MovementState.running;
-            sr.flipX = true;
+            this.transform.rotation = Quaternion.Euler(0, 180, 0);
         }
         else if (dirY > 0f) {
             state = MovementState.running;
