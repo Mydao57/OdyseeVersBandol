@@ -25,12 +25,16 @@ public class BeerBehaviour : ProjectileWeaponBehaviour
             if (other.GetComponent<HealthManager>())
             {
                 other.GetComponent<HealthManager>().TakeDamage(bc.damage);
+                Destroy(gameObject);
+
             }
             else if (other.GetComponent<EnemyHealthManager>())
             {
                 other.GetComponent<EnemyHealthManager>().TakeDamage(bc.damage);
+                Destroy(gameObject);
+
+
             }
-            Destroy(gameObject);
         }
 
         return;

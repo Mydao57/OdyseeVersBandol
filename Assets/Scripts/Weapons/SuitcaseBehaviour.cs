@@ -26,12 +26,15 @@ public class SuitcaseBehaviour : ProjectileWeaponBehaviour
             if (other.GetComponent<HealthManager>())
             {
                 other.GetComponent<HealthManager>().TakeDamage(sc.damage);
+                Destroy(gameObject);
+
             }
             else if (other.GetComponent<EnemyHealthManager>())
             {
                 other.GetComponent<EnemyHealthManager>().TakeDamage(sc.damage);
+                Destroy(gameObject);
+
             }
-            Destroy(gameObject);
         }
 
         return;

@@ -4,22 +4,24 @@ using UnityEngine;
 
 public class EnemyHealthManager : MonoBehaviour
 {
-    protected float maxHealth;
-    [SerializeField] protected float currentHealth;
+    [SerializeField] protected float maxHealth;
+    protected float currentHealth;
     [SerializeField] public FloatingHealthBar healthBar;
 
     // Start is called before the first frame update
     void Start()
     {
         healthBar = GetComponentInChildren<FloatingHealthBar>();
+        currentHealth = maxHealth;
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        healthBar.UpdateHealthBar(currentHealth, maxHealth);
-
+        if (healthBar != null) { 
+            healthBar.UpdateHealthBar(currentHealth, maxHealth);
+        }
     }
 
     public void TakeDamage(float damage)

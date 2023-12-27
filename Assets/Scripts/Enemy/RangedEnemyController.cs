@@ -15,6 +15,9 @@ public class RangedEnemyController : EnemyController
     {
         base.Update();
         weapon.Attack(player.transform.position - this.transform.position);
+
+
+
     }
 
 
