@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7844679886212186972}
   - component: {fileID: 5417557027102448425}
   m_Layer: 0
-  m_Name: Zone lvl 4 1
+  m_Name: Zone lvl 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
