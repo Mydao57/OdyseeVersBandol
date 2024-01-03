@@ -8,6 +8,7 @@ public class InvokerBossController : EnemyController
 
     [SerializeField] private GameObject[] enemiesToSpawn;
     [SerializeField] private float spawnCooldown;
+    [SerializeField]
     private float currentSpawnCooldown;
     private Boolean noInvocations = true;
     // Start is called before the first frame update
@@ -53,6 +54,10 @@ public class InvokerBossController : EnemyController
                 }
                 currentSpawnCooldown = spawnCooldown;
         
+        }
+        else if (noInvocations)
+        { 
+            currentSpawnCooldown -= Time.deltaTime;
         }
     }
 }

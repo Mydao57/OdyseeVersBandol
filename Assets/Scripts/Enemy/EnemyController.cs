@@ -42,7 +42,7 @@ public class EnemyController : MonoBehaviour
         
     }
 
-    private void Move()
+    protected void Move()
     {
         Vector2 direction = (player.transform.position - transform.position).normalized;
         transform.position = Vector2.MoveTowards(this.transform.position, player.transform.position, movementSpeed * Time.deltaTime);

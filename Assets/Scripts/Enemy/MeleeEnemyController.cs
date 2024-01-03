@@ -17,7 +17,9 @@ public class MeleeEnemyController : EnemyController
 
         if (distance <= weapon.radius)
         {
+            Debug.Log("attackl");
             weapon.Attack(null);
+
         }
     }
 
