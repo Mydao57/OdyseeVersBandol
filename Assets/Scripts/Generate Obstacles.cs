@@ -4,15 +4,17 @@ using System.Collections.Generic;
 public class SpawnManager : MonoBehaviour
 {
     public GameObject obstaclePrefab;  // Le prefab de ton obstacle
-    public List<Transform> spawnPoints = new List<Transform>(); // Liste des points de spawn
+    public List<Transform> spawnPointsListLeft = new List<Transform>(); // Première liste de points de spawn
+    public List<Transform> spawnPointsListRight = new List<Transform>(); // Deuxième liste de points de spawn
 
     void Start()
     {
-        // Appelle la fonction de spawn au démarrage
-        SpawnRandomObstacles();
+        // Appelle la fonction de spawn au démarrage pour chaque liste
+        SpawnRandomObstacles(spawnPointsListLeft, true); // Utilise true pour indiquer la liste gauche
+        SpawnRandomObstacles(spawnPointsListRight, false); // Utilise false pour indiquer la liste droite
     }
 
-    void SpawnRandomObstacles()
+    void SpawnRandomObstacles(List<Transform> spawnPoints, bool invertPrefab)
     {
         // Calcul du nombre de spawn points à utiliser (25%)
         int numSpawnPointsToUse = Mathf.CeilToInt(spawnPoints.Count * 0.25f);
@@ -39,7 +41,15 @@ public class SpawnManager : MonoBehaviour
             if (selectedIndices.Contains(i))
             {
                 // Instancie l'obstacle uniquement sur les spawn points sélectionnés
-                Instantiate(obstaclePrefab, spawnPoints[i].position, Quaternion.identity);
+                if (invertPrefab && spawnPoints == spawnPointsListLeft)
+                {
+                    // Inverse le prefab si le spawn point provient de la liste spawnPointsListLeft
+                    Instantiate(obstaclePrefab, spawnPoints[i].position, Quaternion.Euler(0, 180, 0));
+                }
+                else
+                {
+                    Instantiate(obstaclePrefab, spawnPoints[i].position, Quaternion.identity);
+                }
             }
         }
     }
