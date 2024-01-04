@@ -5,7 +5,8 @@ public class SpawnManager : MonoBehaviour
 {
     public GameObject obstaclePrefab; 
     public List<Transform> spawnPointsListLeft = new List<Transform>();
-    public List<Transform> spawnPointsListRight = new List<Transform>(); 
+    public List<Transform> spawnPointsListRight = new List<Transform>();
+    public int probability = 25;
 
     void Start()
     {
@@ -15,7 +16,7 @@ public class SpawnManager : MonoBehaviour
 
     void SpawnRandomObstacles(List<Transform> spawnPoints, bool invertPrefab)
     {
-        int numSpawnPointsToUse = Mathf.CeilToInt(spawnPoints.Count * 0.25f);
+        int numSpawnPointsToUse = Mathf.CeilToInt(spawnPoints.Count * (probability/100.0f));
 
         List<int> selectedIndices = new List<int>();
 

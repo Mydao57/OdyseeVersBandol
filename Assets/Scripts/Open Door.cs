@@ -2,25 +2,25 @@ using UnityEngine;
 
 public class MurScript : MonoBehaviour
 {
-    public GameObject wall1;
-    public GameObject wall2;
+    public GameObject WallLeft;
+    public GameObject WallRight;
 
     void Start()
     {
-        if (ConditionPourFaireDisparaitreMur(wall1))
+        if (WallLeft != null && ConditionPourFaireDisparaitreMur(WallLeft))
         {
-            wall1.SetActive(true);
+            WallLeft.SetActive(false);
         }
 
-        if (ConditionPourFaireDisparaitreMur(wall2))
+        if (WallRight != null && ConditionPourFaireDisparaitreMur(WallRight))
         {
-            wall2.SetActive(false);
+            WallRight.SetActive(false);
         }
     }
 
-    bool ConditionPourFaireDisparaitreMur(GameObject wall)
+    bool ConditionPourFaireDisparaitreMur(GameObject mur)
     {
- //condition des murs => ici
+        // condition à vérifier pour faire disparaître le mur
         return true; 
     }
 }
