@@ -28,12 +28,10 @@ public class WagonGenerator : MonoBehaviour
 
         GameObject previousZone = linkZoneDefault;
 
-        // Liste des prefabs de zones (à l'exception de default, boss et link)
         GameObject[] zonePrefabs = { zoneLvl2Prefab, zoneLvl3Prefab, zoneLvl4Prefab };
 
         foreach (GameObject zonePrefab in zonePrefabs)
         {
-            // Génère entre 1 et 5 fois la zone en question
             int randomCount = Random.Range(minZonesPerLevel, maxZonesPerLevel);
 
             for (int i = 0; i < randomCount; i++)
@@ -47,7 +45,6 @@ public class WagonGenerator : MonoBehaviour
             }
         }
 
-        // Ajoute la boss zone à la fin
         GameObject bossZone = InstantiateZone(bossZonePrefab, 36f, grid);
         PositionZoneNextTo(previousZone, bossZone);
     }
