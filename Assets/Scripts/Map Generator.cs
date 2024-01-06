@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class WagonGenerator : MonoBehaviour
 {
-    public GameObject playerPrefab;
+    /*public GameObject playerPrefab;*/
     public GameObject defaultZonePrefab;
     public GameObject linkZonePrefab;
     public GameObject shopZonePrefab;
@@ -23,15 +23,12 @@ public class WagonGenerator : MonoBehaviour
 
     void GenerateWagon()
     {
-        // Génère la zone par défaut
         GameObject defaultZone = InstantiateZone(defaultZonePrefab, 36f, grid);
 
-        // Génère le lien après la zone par défaut
         GameObject linkZoneDefault = InstantiateZone(linkZonePrefab, 24f, grid);
         PositionZoneNextTo(defaultZone, linkZoneDefault, true);
 
-        // Génère le joueur au milieu de la zone par défaut
-        GeneratePlayerInZone(defaultZone);
+        /*GeneratePlayerInZone(defaultZone);*/
 
         GameObject previousZone = linkZoneDefault;
 
@@ -62,7 +59,6 @@ public class WagonGenerator : MonoBehaviour
             }
         }
 
-        // Génère la zone du boss
         GameObject bossZone = InstantiateZone(bossZonePrefab, 36f, grid);
         PositionZoneNextTo(previousZone, bossZone, true);
     }
@@ -88,9 +84,8 @@ public class WagonGenerator : MonoBehaviour
         }
     }
 
-    void GeneratePlayerInZone(GameObject zone)
+   /* void GeneratePlayerInZone(GameObject zone)
     {
-        // Instancie le joueur au milieu de la zone
         GameObject player = Instantiate(playerPrefab, zone.transform.position, Quaternion.identity);
-    }
+    }*/
 }
