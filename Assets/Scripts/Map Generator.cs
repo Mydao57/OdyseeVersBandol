@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class WagonGenerator : MonoBehaviour
 {
+    public GameObject playerPrefab;
     public GameObject defaultZonePrefab;
     public GameObject linkZonePrefab;
     public GameObject shopZonePrefab;
@@ -22,10 +23,15 @@ public class WagonGenerator : MonoBehaviour
 
     void GenerateWagon()
     {
+        // Génère la zone par défaut
         GameObject defaultZone = InstantiateZone(defaultZonePrefab, 36f, grid);
 
+        // Génère le lien après la zone par défaut
         GameObject linkZoneDefault = InstantiateZone(linkZonePrefab, 24f, grid);
         PositionZoneNextTo(defaultZone, linkZoneDefault, true);
+
+        // Génère le joueur au milieu de la zone par défaut
+        GeneratePlayerInZone(defaultZone);
 
         GameObject previousZone = linkZoneDefault;
 
@@ -38,7 +44,7 @@ public class WagonGenerator : MonoBehaviour
             for (int i = 0; i < randomCount; i++)
             {
                 GameObject currentZone = InstantiateZone(zonePrefab, 36f, grid);
-                PositionZoneNextTo(previousZone, currentZone , true);
+                PositionZoneNextTo(previousZone, currentZone, true);
                 previousZone = currentZone;
                 GameObject linkZone = InstantiateZone(linkZonePrefab, 24f, grid);
                 PositionZoneNextTo(previousZone, linkZone, true);
@@ -50,13 +56,13 @@ public class WagonGenerator : MonoBehaviour
                     PositionZoneNextTo(previousZone, shopZone, true);
                     previousZone = shopZone;
                     GameObject shopLinkZone = InstantiateZone(linkZonePrefab, 24f, grid);
-                    PositionZoneNextTo(previousZone, shopLinkZone,false);
+                    PositionZoneNextTo(previousZone, shopLinkZone, false);
                     previousZone = shopLinkZone;
                 }
             }
         }
 
-
+        // Génère la zone du boss
         GameObject bossZone = InstantiateZone(bossZonePrefab, 36f, grid);
         PositionZoneNextTo(previousZone, bossZone, true);
     }
@@ -75,9 +81,16 @@ public class WagonGenerator : MonoBehaviour
             float xOffset = referenceZone.transform.position.x + (referenceZone.transform.localScale.x * 36f) / 2f + (zone.transform.localScale.x * 36f) / 2f - 6f;
             zone.transform.position = new Vector3(xOffset, 0f, 0f);
         }
-        else {
+        else
+        {
             float xOffset = referenceZone.transform.position.x + (referenceZone.transform.localScale.x * 36f) / 2f + (zone.transform.localScale.x * 36f) / 2f - 12f;
             zone.transform.position = new Vector3(xOffset, 0f, 0f);
         }
+    }
+
+    void GeneratePlayerInZone(GameObject zone)
+    {
+        // Instancie le joueur au milieu de la zone
+        GameObject player = Instantiate(playerPrefab, zone.transform.position, Quaternion.identity);
     }
 }
