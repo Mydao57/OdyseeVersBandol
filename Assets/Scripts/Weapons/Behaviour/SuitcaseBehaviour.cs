@@ -2,41 +2,48 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BeerBehaviour : ProjectileWeaponBehaviour
+public class SuitcaseBehaviour : ProjectileWeaponBehaviour
 {
-    public BeerController bc;
+    public SuitcaseController sc;
     // Start is called before the first frame update
     protected override void Start()
     {
         base.Start();
-        bc = FindObjectOfType<BeerController>();
+        sc = FindObjectOfType<SuitcaseController>();
     }
 
     private void Update()
     {
-        transform.position += direction.normalized * bc.speed * Time.deltaTime;
+        transform.position += direction.normalized * sc.speed * Time.deltaTime;
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
+
         if (other.gameObject.tag != tag)
         {
 
             if (other.GetComponent<HealthManager>())
             {
-                other.GetComponent<HealthManager>().TakeDamage(bc.damage);
+                other.GetComponent<HealthManager>().TakeDamage(sc.damage);
                 Destroy(gameObject);
 
             }
             else if (other.GetComponent<EnemyHealthManager>())
             {
-                other.GetComponent<EnemyHealthManager>().TakeDamage(bc.damage);
+                other.GetComponent<EnemyHealthManager>().TakeDamage(sc.damage);
                 Destroy(gameObject);
-
 
             }
         }
+        else
+        {
+            Destroy(gameObject);
+        }
+
 
         return;
     }
-}
+
+
+   }

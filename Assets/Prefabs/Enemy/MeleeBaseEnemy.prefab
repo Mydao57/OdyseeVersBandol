@@ -161,7 +161,6 @@ GameObject:
   - component: {fileID: 1925281820559167518}
   - component: {fileID: 6948981602012951587}
   - component: {fileID: 570438701003589818}
-  - component: {fileID: 8568643659366995728}
   - component: {fileID: 2312447588352121844}
   m_Layer: 0
   m_Name: Baton
@@ -258,41 +257,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!58 &8568643659366995728
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5839463728704771073}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.0036881566, y: -0.008770615}
-  serializedVersion: 2
-  m_Radius: 0.13787106
 --- !u!114 &2312447588352121844
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -308,7 +272,7 @@ MonoBehaviour:
   prefab: {fileID: 0}
   damage: 2
   speed: 0
-  radius: 0
+  radius: 1
   cooldownDuration: 2
   currentCooldown: 0
 --- !u!1 &6130158037965621001

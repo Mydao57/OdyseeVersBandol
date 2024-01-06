@@ -2,19 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SuitcaseBehaviour : ProjectileWeaponBehaviour
+public class TicketBehaviour : ProjectileWeaponBehaviour
 {
-    public SuitcaseController sc;
-    // Start is called before the first frame update
+    public float speed;
+    public float damage;
     protected override void Start()
     {
         base.Start();
-        sc = FindObjectOfType<SuitcaseController>();
     }
 
     private void Update()
     {
-        transform.position += direction.normalized * sc.speed * Time.deltaTime;
+        transform.position += direction.normalized * speed * Time.deltaTime;
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -25,20 +24,22 @@ public class SuitcaseBehaviour : ProjectileWeaponBehaviour
 
             if (other.GetComponent<HealthManager>())
             {
-                other.GetComponent<HealthManager>().TakeDamage(sc.damage);
-                Destroy(gameObject);
-
+                other.GetComponent<HealthManager>().TakeDamage(damage);
+                Destroy(gameObject); 
             }
             else if (other.GetComponent<EnemyHealthManager>())
             {
-                other.GetComponent<EnemyHealthManager>().TakeDamage(sc.damage);
+                other.GetComponent<EnemyHealthManager>().TakeDamage(damage);
                 Destroy(gameObject);
-
             }
+            
         }
+        else
+        {
+            Destroy(gameObject);
+        }
+
 
         return;
     }
-
-
-   }
+}

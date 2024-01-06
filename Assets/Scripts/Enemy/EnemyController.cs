@@ -6,8 +6,7 @@ public class EnemyController : MonoBehaviour
 {
     protected GameObject player;
     [SerializeField] protected WeaponController weapon = null;
-    
-    [SerializeField] protected float movementSpeed = 3.0f;
+    [SerializeField] public float movementSpeed = 3.0f;
     [SerializeField] protected float range;
 
     protected float distance;
