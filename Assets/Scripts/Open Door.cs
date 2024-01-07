@@ -1,26 +1,62 @@
 using UnityEngine;
+using System.Collections.Generic;
 
-public class MurScript : MonoBehaviour
+public class TriggerZone : MonoBehaviour
 {
+    public GameObject enemyPrefab1;
+    public GameObject enemyPrefab2;
+    public int minTotalEnemies = 4;
+    public int maxTotalEnemies = 10;
+    public List<Transform> spawnPoints = new List<Transform>();
     public GameObject WallLeft;
     public GameObject WallRight;
 
+    private bool triggerActivated = false; // Variable de contrôle pour garder la trace de l'état du trigger
+
     void Start()
     {
-        if (WallLeft != null && ConditionPourFaireDisparaitreMur(WallLeft))
-        {
-            WallLeft.SetActive(false);
-        }
+        // Désactive les murs au départ
+        SetWallsActive(false);
+    }
 
-        if (WallRight != null && ConditionPourFaireDisparaitreMur(WallRight))
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (!triggerActivated && other.CompareTag("Player"))
         {
-            WallRight.SetActive(false);
+            // Le joueur est entré dans la TriggerZone pour la première fois, active les murs
+            SetWallsActive(true);
+            SpawnEnemies(); // Ajoutez cet appel ici pour activer les murs et spawner les ennemis
+            triggerActivated = true; // Marque le trigger comme activé
         }
     }
 
-    bool ConditionPourFaireDisparaitreMur(GameObject mur)
+    void SetWallsActive(bool active)
     {
-        // condition à vérifier pour faire disparaître le mur
-        return true; 
+        if (WallLeft != null)
+        {
+            WallLeft.SetActive(active);
+        }
+
+        if (WallRight != null)
+        {
+            WallRight.SetActive(active);
+        }
+    }
+
+    void SpawnEnemies()
+    {
+        int numTotalEnemies = Random.Range(minTotalEnemies, maxTotalEnemies + 1);
+
+        for (int i = 0; i < numTotalEnemies; i++)
+        {
+            Transform spawnPoint = spawnPoints[Random.Range(0, spawnPoints.Count)];
+
+            GameObject selectedEnemyPrefab = (Random.value < 0.5f) ? enemyPrefab1 : enemyPrefab2;
+
+            Vector3 randomOffset = Random.insideUnitCircle * 2f;
+            Vector3 spawnPosition = spawnPoint.position + new Vector3(randomOffset.x, 0f, randomOffset.y);
+
+            Instantiate(selectedEnemyPrefab, spawnPosition, spawnPoint.rotation);
+        }
     }
 }
