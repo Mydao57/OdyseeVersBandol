@@ -10,13 +10,15 @@ public class DriverBossController : EnemyController
     private float cooldown;
     [SerializeField]
     private float currentCooldown;
+    [SerializeField]
+    GameObject trainPrefab;
     protected override void Update()
     {
         currentCooldown -= Time.deltaTime;
 
         if (currentCooldown <= 0f)
         {
-            float attackNumber = Random.Range(1, 4);
+            float attackNumber = Random.Range(1, 2);
 
             switch (attackNumber)
             {
@@ -39,14 +41,16 @@ public class DriverBossController : EnemyController
 
     protected void Attack1()
     {
-        float orientation = Random.Range(1, 5);
-        Vector3 playerPosition = player.transform.position;
-        switch (orientation)
-        {
-            case 1:
-                Vector3 spawnPosition = new Vector3(playerPosition.x -10f, playerPosition.y, playerPosition.z);
-                break;
-        }
+        GameObject train = Instantiate(trainPrefab);
+
+        train.transform.position = new Vector3(player.transform.position.x -10f, player.transform.position.y, player.transform.position.z);
+
+        train.tag = tag;
+        train.GetComponent<GhostTrainBehaviour>().tag = tag;
+
+
+
+       train.GetComponent<GhostTrainBehaviour>().DirectionChecker(player.transform.position - train.transform.position); ;
 
 
     }

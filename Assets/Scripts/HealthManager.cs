@@ -37,6 +37,7 @@ public class HealthManager : MonoBehaviour
     public void TakeDamage(float damage)
     {
         health -= damage;
+
         if (health < 0f)
         {
             health = 0f;

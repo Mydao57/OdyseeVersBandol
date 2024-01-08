@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TicketBehaviour : ProjectileWeaponBehaviour
+public class GhostTrainBehaviour : ProjectileWeaponBehaviour
 {
     public float speed;
     public float damage;
@@ -21,25 +21,19 @@ public class TicketBehaviour : ProjectileWeaponBehaviour
 
         if (other.gameObject.tag != tag)
         {
-
             if (other.GetComponent<HealthManager>())
             {
+
                 other.GetComponent<HealthManager>().TakeDamage(damage);
-                Destroy(gameObject); 
             }
-            else if (other.GetComponent<EnemyHealthManager>())
-            {
-                other.GetComponent<EnemyHealthManager>().TakeDamage(damage);
-                Destroy(gameObject);
-            }
-            
+           
+
         }
-        /*else
-        {
-            Destroy(gameObject);
-        }*/
+        
 
 
         return;
     }
+
+
 }

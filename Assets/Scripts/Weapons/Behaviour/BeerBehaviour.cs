@@ -36,10 +36,10 @@ public class BeerBehaviour : ProjectileWeaponBehaviour
 
             }
         }
-        else
+        /*else
         {
             Destroy(gameObject);
-        }
+        }*/
 
         return;
     }

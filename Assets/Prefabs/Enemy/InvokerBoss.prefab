@@ -288,6 +288,7 @@ MonoBehaviour:
   - {fileID: 8984725801658411976, guid: b98d00380e04c9f429540d33705ea197, type: 3}
   - {fileID: 8984725801658411976, guid: b98d00380e04c9f429540d33705ea197, type: 3}
   spawnCooldown: 10
+  currentSpawnCooldown: 0
 --- !u!61 &1781339600721473383
 BoxCollider2D:
   m_ObjectHideFlags: 0
