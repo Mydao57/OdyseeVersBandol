@@ -48,7 +48,7 @@ public class EnemyController : MonoBehaviour
 
     }
 
-    private void FlipBasedOnDirection()
+    protected void FlipBasedOnDirection()
     {
         Vector2 direction = (player.transform.position - transform.position).normalized;
 
