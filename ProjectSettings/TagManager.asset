@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemy
   - TriggerZone
+  - PLAYER
   layers:
   - Default
   - TransparentFX

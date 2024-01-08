@@ -21,6 +21,7 @@ public class BubbleBehaviour : ProjectileWeaponBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
 
+
         if (other.gameObject.tag != tag)
         {
 
@@ -37,10 +38,10 @@ public class BubbleBehaviour : ProjectileWeaponBehaviour
 
             }
         }
-        else
+        /*else
         {
             Destroy(gameObject);
-        }
+        }*/
 
         return;
     }
@@ -54,11 +55,11 @@ public class BubbleBehaviour : ProjectileWeaponBehaviour
 
             enemyController.movementSpeed = 0;
             this.GetComponent<BoxCollider2D>().enabled = false;
-            this.GetComponent<SpriteRenderer>().enabled = false; 
-            
+            this.GetComponent<SpriteRenderer>().enabled = false;
+
 
             yield return new WaitForSeconds(stunTime);
-            if(enemyController != null)
+            if (enemyController != null)
             {
                 enemyController.movementSpeed = ms;
             }

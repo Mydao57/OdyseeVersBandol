@@ -25,19 +25,19 @@ public class TicketBehaviour : ProjectileWeaponBehaviour
             if (other.GetComponent<HealthManager>())
             {
                 other.GetComponent<HealthManager>().TakeDamage(damage);
-                Destroy(gameObject); 
+                Destroy(gameObject);
             }
             else if (other.GetComponent<EnemyHealthManager>())
             {
                 other.GetComponent<EnemyHealthManager>().TakeDamage(damage);
                 Destroy(gameObject);
             }
-            
+
         }
-        else
+        /*else
         {
             Destroy(gameObject);
-        }
+        }*/
 
 
         return;

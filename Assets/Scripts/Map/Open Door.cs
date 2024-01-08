@@ -12,6 +12,7 @@ public class TriggerZone : MonoBehaviour
     public GameObject WallRight;
 
     private bool triggerActivated = false; // Variable de contrôle pour garder la trace de l'état du trigger
+    private bool gameActive = false; // Variable pour suivre l'état du jeu
 
     void Start()
     {
@@ -27,6 +28,7 @@ public class TriggerZone : MonoBehaviour
             SetWallsActive(true);
             SpawnEnemies(); // Ajoutez cet appel ici pour activer les murs et spawner les ennemis
             triggerActivated = true; // Marque le trigger comme activé
+            gameActive = true; // Active le jeu lorsque le joueur entre dans la TriggerZone
         }
     }
 
@@ -57,6 +59,24 @@ public class TriggerZone : MonoBehaviour
             Vector3 spawnPosition = spawnPoint.position + new Vector3(randomOffset.x, 0f, randomOffset.y);
 
             Instantiate(selectedEnemyPrefab, spawnPosition, spawnPoint.rotation);
+        }
+    }
+
+    void Update()
+    {
+        if (gameActive && triggerActivated)
+        {
+            CheckForNoEnemies();
+        }
+    }
+
+    void CheckForNoEnemies()
+    {
+        GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+
+        if (enemies.Length == 0)
+        {
+            WallRight.SetActive(false);
         }
     }
 }

@@ -36,14 +36,14 @@ public class SuitcaseBehaviour : ProjectileWeaponBehaviour
 
             }
         }
-        else
+        /*else
         {
             Destroy(gameObject);
-        }
+        }*/
 
 
         return;
     }
 
 
-   }
+}

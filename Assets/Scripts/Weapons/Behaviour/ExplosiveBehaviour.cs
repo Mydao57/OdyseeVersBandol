@@ -5,12 +5,12 @@ using UnityEngine;
 public class ExplosiveBehaviour : ProjectileWeaponBehaviour
 {
     public ExplosiveController ec;
-    
+
 
     protected override void Start()
     {
-         ec = FindObjectOfType<ExplosiveController>();
-         Invoke("Explode", ec.delay);
+        ec = FindObjectOfType<ExplosiveController>();
+        Invoke("Explode", ec.delay);
     }
 
     void Explode()
@@ -31,18 +31,18 @@ public class ExplosiveBehaviour : ProjectileWeaponBehaviour
                     }
                     else if (collider.GetComponent<EnemyHealthManager>())
                     {
-                       
+
                         collider.GetComponent<EnemyHealthManager>().TakeDamage(ec.damage);
                     }
 
                     Vector2 direction = (collider.transform.position - transform.position).normalized;
                     rb.AddForce(direction * ec.explosionForce, ForceMode2D.Impulse);
                 }
-               
+
             }
         }
 
-        
+
         Destroy(gameObject);
     }
 

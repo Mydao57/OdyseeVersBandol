@@ -18,6 +18,6 @@ public class ProjectileWeaponBehaviour : MonoBehaviour
     {
         direction = dir;
     }
-    
-    
+
+
 }
