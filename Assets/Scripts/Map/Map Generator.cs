@@ -34,13 +34,13 @@ public class WagonGenerator : MonoBehaviour
 
         GameObject[] zonePrefabs = { zoneLvl2Prefab, zoneLvl3Prefab, zoneLvl4Prefab };
 
-        foreach (GameObject zonePrefab in zonePrefabs)
+        for (int levelIndex = 0; levelIndex < zonePrefabs.Length; levelIndex++)
         {
             int randomCount = Random.Range(minZonesPerLevel, maxZonesPerLevel);
 
             for (int i = 0; i < randomCount; i++)
             {
-                GameObject currentZone = InstantiateZone(zonePrefab, 36f, grid);
+                GameObject currentZone = InstantiateZone(zonePrefabs[levelIndex], 36f, grid);
                 PositionZoneNextTo(previousZone, currentZone, true);
                 previousZone = currentZone;
                 GameObject linkZone = InstantiateZone(linkZonePrefab, 24f, grid);
@@ -57,7 +57,10 @@ public class WagonGenerator : MonoBehaviour
                     previousZone = shopLinkZone;
                 }
             }
+
+            // Incrémentez le compteur pour le niveau actuel
         }
+
 
         GameObject bossZone = InstantiateZone(bossZonePrefab, 36f, grid);
         PositionZoneNextTo(previousZone, bossZone, true);
@@ -84,8 +87,8 @@ public class WagonGenerator : MonoBehaviour
         }
     }
 
-   /* void GeneratePlayerInZone(GameObject zone)
-    {
-        GameObject player = Instantiate(playerPrefab, zone.transform.position, Quaternion.identity);
-    }*/
+    /* void GeneratePlayerInZone(GameObject zone)
+     {
+         GameObject player = Instantiate(playerPrefab, zone.transform.position, Quaternion.identity);
+     }*/
 }

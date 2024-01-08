@@ -5,18 +5,20 @@ public class TriggerZone : MonoBehaviour
 {
     public GameObject enemyPrefab1;
     public GameObject enemyPrefab2;
+    public GameObject MiniBossPrefab1;
+    public GameObject MiniBossPrefab2;
+    public GameObject MiniBossPrefab3;
     public int minTotalEnemies = 4;
     public int maxTotalEnemies = 10;
     public List<Transform> spawnPoints = new List<Transform>();
     public GameObject WallLeft;
     public GameObject WallRight;
 
-    private bool triggerActivated = false; // Variable de contrôle pour garder la trace de l'état du trigger
-    private bool gameActive = false; // Variable pour suivre l'état du jeu
+    private bool triggerActivated = false;
+    private bool gameActive = false; 
 
     void Start()
     {
-        // Désactive les murs au départ
         SetWallsActive(false);
     }
 
@@ -24,11 +26,39 @@ public class TriggerZone : MonoBehaviour
     {
         if (!triggerActivated && other.CompareTag("Player"))
         {
-            // Le joueur est entré dans la TriggerZone pour la première fois, active les murs
             SetWallsActive(true);
-            SpawnEnemies(); // Ajoutez cet appel ici pour activer les murs et spawner les ennemis
-            triggerActivated = true; // Marque le trigger comme activé
-            gameActive = true; // Active le jeu lorsque le joueur entre dans la TriggerZone
+            SpawnEnemies(); 
+            triggerActivated = true;
+            gameActive = true; 
+        }
+    }
+
+    void ActivateMiniBoss()
+    {
+        GameObject selectedMiniBossPrefab = null;
+        float randomValue = Random.Range(0f, 100f);
+
+        if (randomValue <= (maxTotalEnemies + minTotalEnemies))
+        {
+            int miniBossIndex = Random.Range(0, 3);
+            switch (miniBossIndex)
+            {
+                case 0:
+                    selectedMiniBossPrefab = MiniBossPrefab1;
+                    break;
+                case 1:
+                    selectedMiniBossPrefab = MiniBossPrefab2;
+                    break;
+                case 2:
+                    selectedMiniBossPrefab = MiniBossPrefab3;
+                    break;
+            }
+
+            if (selectedMiniBossPrefab != null)
+            {
+                Transform spawnPoint = spawnPoints[Random.Range(0, spawnPoints.Count)];
+                Instantiate(selectedMiniBossPrefab, spawnPoint.position, spawnPoint.rotation);
+            }
         }
     }
 
@@ -60,6 +90,8 @@ public class TriggerZone : MonoBehaviour
 
             Instantiate(selectedEnemyPrefab, spawnPosition, spawnPoint.rotation);
         }
+
+        ActivateMiniBoss();
     }
 
     void Update()
