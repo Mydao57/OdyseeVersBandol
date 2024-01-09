@@ -198,6 +198,7 @@ MonoBehaviour:
   - {fileID: 1885976611598828084}
   - {fileID: 936857008016448330}
   - {fileID: 3201337246412049423}
+  probability: 50
 --- !u!1 &110511948740695277
 GameObject:
   m_ObjectHideFlags: 0

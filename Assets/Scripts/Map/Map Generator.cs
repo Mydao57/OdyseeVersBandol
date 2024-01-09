@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class WagonGenerator : MonoBehaviour
 {
+    /*public GameObject playerPrefab;*/
     public GameObject defaultZonePrefab;
     public GameObject linkZonePrefab;
     public GameObject shopZonePrefab;
@@ -27,18 +28,20 @@ public class WagonGenerator : MonoBehaviour
         GameObject linkZoneDefault = InstantiateZone(linkZonePrefab, 24f, grid);
         PositionZoneNextTo(defaultZone, linkZoneDefault, true);
 
+        /*GeneratePlayerInZone(defaultZone);*/
+
         GameObject previousZone = linkZoneDefault;
 
         GameObject[] zonePrefabs = { zoneLvl2Prefab, zoneLvl3Prefab, zoneLvl4Prefab };
 
-        foreach (GameObject zonePrefab in zonePrefabs)
+        for (int levelIndex = 0; levelIndex < zonePrefabs.Length; levelIndex++)
         {
             int randomCount = Random.Range(minZonesPerLevel, maxZonesPerLevel);
 
             for (int i = 0; i < randomCount; i++)
             {
-                GameObject currentZone = InstantiateZone(zonePrefab, 36f, grid);
-                PositionZoneNextTo(previousZone, currentZone , true);
+                GameObject currentZone = InstantiateZone(zonePrefabs[levelIndex], 36f, grid);
+                PositionZoneNextTo(previousZone, currentZone, true);
                 previousZone = currentZone;
                 GameObject linkZone = InstantiateZone(linkZonePrefab, 24f, grid);
                 PositionZoneNextTo(previousZone, linkZone, true);
@@ -50,10 +53,12 @@ public class WagonGenerator : MonoBehaviour
                     PositionZoneNextTo(previousZone, shopZone, true);
                     previousZone = shopZone;
                     GameObject shopLinkZone = InstantiateZone(linkZonePrefab, 24f, grid);
-                    PositionZoneNextTo(previousZone, shopLinkZone,false);
+                    PositionZoneNextTo(previousZone, shopLinkZone, false);
                     previousZone = shopLinkZone;
                 }
             }
+
+            // Incrémentez le compteur pour le niveau actuel
         }
 
 
@@ -75,9 +80,15 @@ public class WagonGenerator : MonoBehaviour
             float xOffset = referenceZone.transform.position.x + (referenceZone.transform.localScale.x * 36f) / 2f + (zone.transform.localScale.x * 36f) / 2f - 6f;
             zone.transform.position = new Vector3(xOffset, 0f, 0f);
         }
-        else {
+        else
+        {
             float xOffset = referenceZone.transform.position.x + (referenceZone.transform.localScale.x * 36f) / 2f + (zone.transform.localScale.x * 36f) / 2f - 12f;
             zone.transform.position = new Vector3(xOffset, 0f, 0f);
         }
     }
+
+    /* void GeneratePlayerInZone(GameObject zone)
+     {
+         GameObject player = Instantiate(playerPrefab, zone.transform.position, Quaternion.identity);
+     }*/
 }
