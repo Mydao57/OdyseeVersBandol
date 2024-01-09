@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EnemyController : MonoBehaviour
 {
     protected GameObject player;
+    [SerializeField] private int score = 0;
     [SerializeField] protected WeaponController weapon = null;
     [SerializeField] public float movementSpeed = 3.0f;
     [SerializeField] protected float range;
@@ -63,5 +65,13 @@ public class EnemyController : MonoBehaviour
 
         }
 
+    }
+
+    protected void OnDestroy()
+    {
+        if (GameObject.Find("Score").GetComponent<ScoreManager>())
+        {
+            GameObject.Find("Score").GetComponent<ScoreManager>().AddScore(score);
+        }
     }
 }

@@ -21,7 +21,6 @@ public class BubbleBehaviour : ProjectileWeaponBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
 
-
         if (other.gameObject.tag != tag)
         {
 
@@ -33,6 +32,7 @@ public class BubbleBehaviour : ProjectileWeaponBehaviour
             }
             else if (other.GetComponent<EnemyHealthManager>())
             {
+
                 other.GetComponent<EnemyHealthManager>().TakeDamage(wc.damage);
                 StartCoroutine(Stun(other.gameObject));
 

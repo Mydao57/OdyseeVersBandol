@@ -609,6 +609,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d13198c4ed755c448f1a895058ea919, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  score: 10
   weapon: {fileID: 2312447588352121844}
   movementSpeed: 3
   range: 0.8

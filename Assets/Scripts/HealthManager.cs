@@ -36,6 +36,7 @@ public class HealthManager : MonoBehaviour
     // Méthode pour prendre des dégâts
     public void TakeDamage(float damage)
     {
+        damageTaken += damage; 
         health -= damage;
 
         if (health < 0f)
