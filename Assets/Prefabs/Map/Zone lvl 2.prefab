@@ -5484,7 +5484,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6335524019265887351}
-  - component: {fileID: 3010286688547382744}
+  - component: {fileID: 2789655553737118499}
   m_Layer: 0
   m_Name: GenerateObstacle
   m_TagString: Untagged
@@ -5507,7 +5507,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4237593524984477539}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3010286688547382744
+--- !u!114 &2789655553737118499
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5516,10 +5516,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 5978005027196377849}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 03410ed07be40ba4fb49c969b7afd504, type: 3}
+  m_Script: {fileID: 11500000, guid: 3e71d161fd326c94a983c646889e8005, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstaclePrefab: {fileID: 7154120074171139809, guid: 199d92f4a7c2c0349803a39e11f78f93, type: 3}
+  obstaclePrefab: {fileID: 7154120074171139809, guid: f5b05b0a7318c794b8cf5268c2918db9, type: 3}
   spawnPointsListLeft:
   - {fileID: 3991399209648324102}
   - {fileID: 8423512312775884677}
@@ -15380,8 +15380,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6742941050110008821}
-  - component: {fileID: 2700745898200547386}
-  - component: {fileID: 1311778733580761421}
+  - component: {fileID: 8336347906581168488}
+  - component: {fileID: 3087636096197835657}
   m_Layer: 0
   m_Name: TriggerZone
   m_TagString: TriggerZone
@@ -15398,13 +15398,13 @@ Transform:
   m_GameObject: {fileID: 8095033720529898362}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -17.34, y: -1.52, z: 0.008531015}
+  m_LocalPosition: {x: -17.34, y: -1.75, z: 0.008531015}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4237593524984477539}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2700745898200547386
+--- !u!114 &8336347906581168488
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -15413,14 +15413,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 8095033720529898362}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a9be6853d4a4c2c44a770b072452db1c, type: 3}
+  m_Script: {fileID: 11500000, guid: ffb7134c035f0764c809a25385df936f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   enemyPrefab1: {fileID: 8984725801658411976, guid: b98d00380e04c9f429540d33705ea197, type: 3}
   enemyPrefab2: {fileID: 6706442190334387735, guid: 863aa79eed533394fa12d6781fb5d729, type: 3}
-  MiniBossPrefab1: {fileID: 1634215626809049811, guid: 775985094928c8b4b801ccdf52d40fd3, type: 3}
+  MiniBossPrefab1: {fileID: 5398609315544842320, guid: 46aaa2a5727326f40ace16e1c096cc31, type: 3}
   MiniBossPrefab2: {fileID: 6928920604409498519, guid: 90397face891ae34cb249bd24c2722b2, type: 3}
-  MiniBossPrefab3: {fileID: 5398609315544842320, guid: 46aaa2a5727326f40ace16e1c096cc31, type: 3}
+  MiniBossPrefab3: {fileID: 1634215626809049811, guid: 775985094928c8b4b801ccdf52d40fd3, type: 3}
   minTotalEnemies: 4
   maxTotalEnemies: 8
   spawnPoints:
@@ -15546,7 +15546,7 @@ MonoBehaviour:
   - {fileID: 1854353386364355473}
   WallLeft: {fileID: 3822754311444790753}
   WallRight: {fileID: 3992979827944480179}
---- !u!60 &1311778733580761421
+--- !u!60 &3087636096197835657
 PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -15590,14 +15590,14 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.6597433, y: 4.5181317}
-      - {x: -0.65767, y: 3.739946}
-      - {x: 0.4994812, y: 3.7439363}
-      - {x: 0.51827145, y: 0.33191812}
-      - {x: -0.6558295, y: 0.34056002}
-      - {x: -0.65598625, y: -0.47083127}
-      - {x: 1.3555557, y: -0.48414683}
-      - {x: 1.3399067, y: 4.5170145}
+    - - {x: 0.9870033, y: 4.652632}
+      - {x: -0.68216133, y: 4.6691318}
+      - {x: -0.719862, y: 4.063119}
+      - {x: 0.5319748, y: 4.08589}
+      - {x: 0.52703375, y: -0.44621167}
+      - {x: -0.66330856, y: -0.47455883}
+      - {x: -0.7284702, y: -0.84138346}
+      - {x: 0.9834223, y: -0.7590919}
   m_UseDelaunayMesh: 0
 --- !u!1 &8117143658886347500
 GameObject:

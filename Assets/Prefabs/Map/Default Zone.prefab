@@ -40,7 +40,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5134944946344773033}
-  - component: {fileID: 5174676746287880136}
+  - component: {fileID: 2687633075899969257}
   m_Layer: 0
   m_Name: GenerateObstacle
   m_TagString: Untagged
@@ -63,7 +63,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 3080838600258160295}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5174676746287880136
+--- !u!114 &2687633075899969257
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -72,10 +72,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 78634579216296677}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 03410ed07be40ba4fb49c969b7afd504, type: 3}
+  m_Script: {fileID: 11500000, guid: 3e71d161fd326c94a983c646889e8005, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstaclePrefab: {fileID: 7154120074171139809, guid: 199d92f4a7c2c0349803a39e11f78f93, type: 3}
+  obstaclePrefab: {fileID: 7154120074171139809, guid: f5b05b0a7318c794b8cf5268c2918db9, type: 3}
   spawnPointsListLeft:
   - {fileID: 5818385791604236373}
   - {fileID: 5240300220035111555}
@@ -198,7 +198,7 @@ MonoBehaviour:
   - {fileID: 1885976611598828084}
   - {fileID: 936857008016448330}
   - {fileID: 3201337246412049423}
-  probability: 50
+  probability: 25
 --- !u!1 &110511948740695277
 GameObject:
   m_ObjectHideFlags: 0
@@ -391,7 +391,6 @@ Transform:
   - {fileID: 5134944946344773033}
   - {fileID: 7600204829390850102}
   - {fileID: 7346256227876175931}
-  - {fileID: 8898157487533073093}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1839735485 &7457257645283410641
@@ -12254,52 +12253,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 7600204829390850102}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &8141336173173331561
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8898157487533073093}
-  - component: {fileID: 4861445595244451689}
-  m_Layer: 0
-  m_Name: OpenDoor
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &8898157487533073093
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8141336173173331561}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 15.653355, y: -2.3537257, z: -0.061158873}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 3080838600258160295}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4861445595244451689
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8141336173173331561}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a9be6853d4a4c2c44a770b072452db1c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  WallLeft: {fileID: 0}
-  WallRight: {fileID: 0}
 --- !u!1 &8196893856705091761
 GameObject:
   m_ObjectHideFlags: 0

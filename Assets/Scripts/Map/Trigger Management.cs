@@ -15,7 +15,7 @@ public class TriggerZone : MonoBehaviour
     public GameObject WallRight;
 
     private bool triggerActivated = false;
-    private bool gameActive = false; 
+    private bool gameActive = false;
 
     void Start()
     {
@@ -27,9 +27,9 @@ public class TriggerZone : MonoBehaviour
         if (!triggerActivated && other.CompareTag("Player"))
         {
             SetWallsActive(true);
-            SpawnEnemies(); 
+            SpawnEnemies();
             triggerActivated = true;
-            gameActive = true; 
+            gameActive = true;
         }
     }
 
