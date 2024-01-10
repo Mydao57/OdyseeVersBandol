@@ -1,11 +1,11 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class HealthManager : MonoBehaviour
 {
     public float maxhealth = 3f;
-    public float health
-        ;
+    public float health;
     private float damageTaken = 0f; // Nouvelle variable pour suivre les dégâts subis
 
     public Image[] hearts;
@@ -38,12 +38,19 @@ public class HealthManager : MonoBehaviour
                 hearts[i].sprite = emptyHeart;
             }
         }
+
+        // Vérifier si la vie est égale à 0
+        if (health == 0f)
+        {
+            // Charger une nouvelle scène (remplacez "NouvelleScene" par le nom de votre scène)
+            SceneManager.LoadScene("GameOver");
+        }
     }
 
     // Méthode pour prendre des dégâts
     public void TakeDamage(float damage)
     {
-        damageTaken += damage; 
+        damageTaken += damage;
         health -= damage;
 
         if (health < 0f)
@@ -56,5 +63,4 @@ public class HealthManager : MonoBehaviour
     {
         TakeDamage(0.5f);
     }
-
 }
