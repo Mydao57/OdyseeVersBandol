@@ -1,0 +1,3647 @@
+fileFormatVersion: 2
+guid: 0a53f6ff3f47d1741ae56c83549bd88a
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_0
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 1536
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3adb2bd67e5010b43ac92d36803a2167
+      internalID: -520757585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_1
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 1472
+        width: 288
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37467b5860895a240a4e29a5f264f983
+      internalID: -1116921930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_2
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 1550
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cc4f3b7b6b94144181157d34474488d
+      internalID: -1100655171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_3
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 1552
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e91abd6bfc0568947bf30f85651a7864
+      internalID: -513669044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_4
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 1552
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 438d78573c6bc5e4681ba31f6ffa7575
+      internalID: 93105519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_5
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 1488
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 744797f5858bfae42995dffb6d64ed3d
+      internalID: 1355006887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_6
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 1486
+        width: 54
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 711b7ecf246607540990965ab2e36e84
+      internalID: -536958550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_7
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 1492
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e27723e2e712a6840af84a0cde8124c7
+      internalID: 85118565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_8
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 1440
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aee0b89f387d831428284b5caf0d7a05
+      internalID: -560764583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_9
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 1344
+        width: 44
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad273dad6328766469c935af95bf463b
+      internalID: -1904809981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_10
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 1344
+        width: 44
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec38756a4f2c23a49899909b094e2fa9
+      internalID: -336382489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_11
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 1196
+        width: 256
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 196e044369ff97e488854e38e031cef5
+      internalID: 485595797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_12
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 1428
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e3dda87ca9c27044baf43567426087d
+      internalID: -149142760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_13
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 1344
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4343843a1c0a06499bb1268fa5bc594
+      internalID: 1346910084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_14
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 1364
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78ff8eccc6b2f0d439573081caf8d4a8
+      internalID: -1250887596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_15
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 1222
+        width: 48
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e32cdb2c687f3114791a38569710482f
+      internalID: -704357710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_16
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 1216
+        width: 44
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72beb0cad5641c749ba4c59e6f3022d7
+      internalID: 1708128285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_17
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 1216
+        width: 44
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd19191f77e999e40bea8f188fecb923
+      internalID: -130121760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_18
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 1106
+        width: 66
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e44925186037f6438ef8697a03d044b
+      internalID: 304172330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_19
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 1120
+        width: 66
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c19b51a314edde4a9aeb8c36be0282e
+      internalID: -1112915504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_20
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 1108
+        width: 80
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7d069ea2ce7ccc4480b2ad88f5ce4cf
+      internalID: 1555897074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_21
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 1120
+        width: 80
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73a2784995970ac40b5c9588c549f1cd
+      internalID: -2144855090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_22
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 1126
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fdbc96e035b4604b91efd1d9bff2cb0
+      internalID: 1747400142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_23
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 1152
+        width: 24
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c700edf6ada4e04c90f5a94fefaa2c9
+      internalID: 1360242930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_24
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 1120
+        width: 24
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6670e63eed8ebe4e9730ec08fb29fdf
+      internalID: 1594970227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_25
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 1024
+        width: 66
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4028a94e14cb1a428e6a8afaa833bc8
+      internalID: -317241195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_26
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 1056
+        width: 80
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f61deccd18cb89347b514e80e0feacf5
+      internalID: -376794969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_27
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 1062
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1b70e4629e15324d89f6f1e37d9fa57
+      internalID: 1082810599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_28
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 1088
+        width: 24
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7fb1c322cf90b847a8f716dff7706e0
+      internalID: 145518055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_29
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 996
+        width: 96
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1f7afbe5ad6a2a48b30d78707065252
+      internalID: 798154073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_30
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 1024
+        width: 80
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29e3fc4c1fe713c4582c1a861d20eeb4
+      internalID: 1194626243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_31
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 1056
+        width: 24
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36228dc161834524b8df3d7eeafe1f5f
+      internalID: -805838608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_32
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 992
+        width: 80
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 470ae46e33bc4874081efa491726ba2d
+      internalID: -541269474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_33
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 998
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db329e06d3a75734f9a0b0a71a8227cc
+      internalID: 270397422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_34
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 1024
+        width: 24
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53214aa3935cef14e9164f47955886af
+      internalID: 909183015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_35
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 832
+        width: 104
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2633ff490ededaa4d916e371ee9c5330
+      internalID: -2006376723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_36
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 992
+        width: 24
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41105e99289523b4d9ec6c0a4d176631
+      internalID: -260159645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_37
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 960
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7000c3dda409d7e4bbff9715f62d4d1c
+      internalID: -392309439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_38
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 930
+        width: 26
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 433b71d5a008159448094366ac7e8a1a
+      internalID: 957681888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_39
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 968
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f748d1841c91d0a46adf9685dc2c6a12
+      internalID: -1867735567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_40
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 962
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7122cbcca0aba4040a86b045bcef978a
+      internalID: 1746124514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_41
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 960
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4be9928b55949d540806b3ba986bc0df
+      internalID: 521972368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_42
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 934
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c110337394d0774197272fb574302aa
+      internalID: 1039165828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_43
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 960
+        width: 24
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 548e51799d67f4f4a8f33645360fc372
+      internalID: 1851756713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_44
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 934
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52ebcbaed15f55e498dc570527a567bb
+      internalID: 1867075315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_45
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 960
+        width: 24
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fff32dc1a425f1749bf30d35ead5f289
+      internalID: -1273652862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_46
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 934
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e24e17f95ca546d4baeb4fbf3f77173a
+      internalID: -1965100193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_47
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 960
+        width: 24
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49a045c3a5aee9a4bb9bb73a2634d8b4
+      internalID: 221422395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_48
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 930
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0380622a2a999434d861ec1bcd888fc5
+      internalID: 1637498535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_49
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 938
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c19679dc98670f04dbcdfa5881ad87ae
+      internalID: -1340354316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_50
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 928
+        width: 24
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db26d64a7da3a624891daaaa3bd8a30d
+      internalID: 1306665893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_51
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 928
+        width: 24
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53d9a9d8231f4be4f80af81ec666e780
+      internalID: -1422591388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_52
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 800
+        width: 32
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5728df32e48b527458e86afdc87bef5a
+      internalID: 749959730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_53
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 840
+        width: 68
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f9cf8485c0e3e04a9c14b9781858526
+      internalID: -643010174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_54
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 864
+        width: 68
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef8777180fe2173499bc6a4cd5c18fad
+      internalID: 1233533702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_55
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 818
+        width: 44
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1aef26b7ec7d2fd49a4f661eaefcd1b2
+      internalID: -1801914436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_56
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 864
+        width: 44
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17653a7357582a147be70a8d783de6a1
+      internalID: 645076628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_57
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 800
+        width: 32
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f78ff5fd2fdabe745a66c49407f04db4
+      internalID: 364329336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_58
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 864
+        width: 44
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb5ed5d0d4e9ec444b8a9c4300cfcb5f
+      internalID: 787705637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_59
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 768
+        width: 68
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 097f259dc35520745a7f31c2eb6c2cb2
+      internalID: 981065531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_60
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 770
+        width: 26
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6483a15ab8977ac4c90bf792dcc4b9d5
+      internalID: -1852625676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_61
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 826
+        width: 10
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fe9a187102bbc3469141ad734c8db06
+      internalID: -245657109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_62
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 824
+        width: 10
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07f34f9b96f224949bf6860b18b515f0
+      internalID: -2123386227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_63
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 800
+        width: 44
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e74b4c7437e5fc408f2e935806e6e25
+      internalID: 1295982465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_64
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 800
+        width: 44
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60725b05ba928084b90f008c06071b5e
+      internalID: -2041267182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_65
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 744
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d361e94fb57a97240b2c21de5d587f4c
+      internalID: -1797120841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_66
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 738
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e65946a47bf9f443bba2b815d785fcd
+      internalID: -1401955102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_67
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 740
+        width: 40
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e5ac7bcaae5ffb43ab79b7c41b8f629
+      internalID: 1528638852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_68
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 706
+        width: 96
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0189e9939989fc4687a748542874ab5
+      internalID: 257874758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_69
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 748
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f734649463ee2b24da73ffb8c48475e6
+      internalID: 21777776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_70
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 746
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3db73c35c3737f46bf27f52a75b9def
+      internalID: -1572092893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_71
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 746
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 978cb5642e0aab04e8b9fde3354d6c1b
+      internalID: -960329406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_72
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 746
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17605c7c6467441439339610c61f392a
+      internalID: -1481811120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_73
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 746
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec9f45bc139c81347b8c3eb6999f08f5
+      internalID: -699333595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_74
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 746
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1f6d2c5b8c4ac145beab7c30d11688d
+      internalID: -1808648711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_75
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 642
+        width: 96
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60b549d9a12f4cb44b29530da32c06cf
+      internalID: -2016935926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_76
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 610
+        width: 96
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a10fb243372e214489792f36bc25417e
+      internalID: 870707322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_77
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 684
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 435ed46318dfc5e4388c60bcc008b4ac
+      internalID: -1432594570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_78
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 682
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b601cdee23688b41a8aafae7cd74eca
+      internalID: -1726329674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_79
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 682
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7d8bae45cb7a2544b0bf4b4f591cd2a
+      internalID: -2087370841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_80
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 682
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96266ca915df5af4394b333e43856e70
+      internalID: -286933681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_81
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 682
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5652af4962a2d87498ee2bb989e39335
+      internalID: -410660558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_82
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 682
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fa8d04d099379b43a3ff07d2b6ef07d
+      internalID: -690736003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_83
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 620
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eefc8fb41bfff044a9a88e47377b5e55
+      internalID: 2140324382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_84
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 616
+        width: 58
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3f921f7b49d40f4087cfea6b058b792
+      internalID: -240687393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_85
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 616
+        width: 58
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7154d8574ce9bfb4b99a05a7956fd3a2
+      internalID: -1600315903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_86
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 616
+        width: 58
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 155b72f4c682acf4eaa78a7a1bbc3cb9
+      internalID: 167037382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_87
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 560
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a164317a57c17f4e8cd725ade4f2adb
+      internalID: -1651514138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_88
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 560
+        width: 160
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80281befff2e3e543bc4894a6a6c5fd8
+      internalID: -1029303522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_89
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 572
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28faffc35f9695549878fbc9f8b0669e
+      internalID: -1317395923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_90
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 552
+        width: 58
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4d829f5ec8f2a741ad725858fa3e743
+      internalID: 800578666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_91
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 554
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24b39d810cd511f40823e1dc51d63fa5
+      internalID: 80088639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_92
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 576
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2aa32915ff25d3f4ba4c6f24185e1da0
+      internalID: -1853782877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_93
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 556
+        width: 96
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bebfc34506342944aaeb008f52f2fdfc
+      internalID: 1150155120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_94
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 524
+        width: 20
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a642434b4db17b7409974e1e48c65fbe
+      internalID: -1112774318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_95
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 482
+        width: 38
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3c3a4329d2b05946aa11dedf7828f45
+      internalID: 410777175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_96
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 482
+        width: 38
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b009a8ee07f8a7e41922b42d8839e8f1
+      internalID: 158252146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_97
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 490
+        width: 40
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9fd7f4fb098d9e438f580f57bdbd8c1
+      internalID: 1208356885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_98
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 490
+        width: 40
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7ac9433877344e409b9f8597ba7dfb7
+      internalID: 1352914963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_99
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 486
+        width: 22
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 715e95fb1ff6cc7498395d3692603ea2
+      internalID: -1920780042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_100
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 486
+        width: 22
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fce8dd899b65874c9d80927504c6c1d
+      internalID: -2092757823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_101
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 512
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aad0e65815105742bbd7b295bce3fd6
+      internalID: -690851094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_102
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 530
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f5fcc45b0784da4e8493853ce7077d5
+      internalID: 309593620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_103
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 530
+        width: 26
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b2983f395540c249a81402d2adb0f77
+      internalID: 1415627336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_104
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 530
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6691307e4261bf4bacd853e084c5391
+      internalID: 373946423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_105
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 530
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f84106e80034314586bc0bd45fd30cc
+      internalID: -1774601363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_106
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 492
+        width: 20
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f064cd13de8a444897603d34cc68334
+      internalID: 1750133591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_107
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 448
+        width: 16
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1838cf42037761b4db243066c677b768
+      internalID: -330363720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_108
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 448
+        width: 16
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b6d7adc0b145174d82afdb504768937
+      internalID: 1892185662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_109
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 448
+        width: 16
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e7da2a99b46eee4aa90a46b72c75c7e
+      internalID: 1984650410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_110
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 460
+        width: 20
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a83d6416c6d55c41b78dfa57626d072
+      internalID: -238492738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_111
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 418
+        width: 38
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f46761b475915b34cb735f87283de8bc
+      internalID: 1323992986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_112
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 418
+        width: 38
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6aa8a7851f96c3b4988d3bf3a38e33ae
+      internalID: 1263812712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_113
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 426
+        width: 40
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0a1841ce0199bc4f9821aad1054d432
+      internalID: 91219947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_114
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 426
+        width: 40
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2141dacc22c3bed4081b7b813fba33b3
+      internalID: 899795835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_115
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 422
+        width: 22
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d5bdd18f21060745a72f7b974026a61
+      internalID: -250362204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_116
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 416
+        width: 12
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baaea5b39532c54478424eb7f5a569b5
+      internalID: 29964282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_117
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 416
+        width: 12
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c473f34efb5f0f14194cb5d81e3794f3
+      internalID: 534490111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_118
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 428
+        width: 20
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ded4487fd54d26d4cbf28eeb3a56e623
+      internalID: 809954491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_119
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 370
+        width: 70
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c117b4382cd9f384286d860c010b55db
+      internalID: 2109618772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_120
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 396
+        width: 20
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5c11e1c0508aa848aa12000dbbf40f8
+      internalID: -312671625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_121
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 354
+        width: 38
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f1d52f1b783b98408aa1160e53ba601
+      internalID: -694750459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_122
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 354
+        width: 38
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fdd715d8ece6a64aaba5ae266a5bf3e
+      internalID: -1410683048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_123
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 372
+        width: 44
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fcbd985e2e1da64998ea7fe5fecacd8
+      internalID: -507242112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_124
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 372
+        width: 44
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4a7f8795e78e7348a32ea07b8d4b2cd
+      internalID: 247004847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_125
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 308
+        width: 70
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9140f173810e7e844a8c11b8d582e790
+      internalID: -1101003612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_126
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 364
+        width: 20
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91646a32629332049ad605b529b30aca
+      internalID: -1030153660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_127
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 278
+        width: 60
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dfed2cfb34824c49b72d838dba08b7b
+      internalID: -419491038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_128
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 332
+        width: 20
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f0a5e65697b8cd4c99a730a7a065bec
+      internalID: 394487516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_129
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 290
+        width: 38
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4083e2f07de6a243b524f9e9aeb4211
+      internalID: -1488103491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_130
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 290
+        width: 38
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc7b38a1469172f4db40f83031659e1a
+      internalID: 794118521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_131
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 308
+        width: 44
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33f2ad5aede7dc14495917ce32d3a370
+      internalID: -371311602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_132
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 308
+        width: 44
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cd17e544d124ca48b251f3cec40da07
+      internalID: 853517122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_133
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 300
+        width: 20
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4f8052e8a6d45c4f9719c8f8b9e2723
+      internalID: 50982151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_134
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 100
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f72a654d7eb5e44cb3d335f21e68a47
+      internalID: 904502164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_135
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 224
+        width: 36
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10c9b725da5fbc446b6177a37e0abbe0
+      internalID: 1929885177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_136
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 224
+        width: 36
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 276f59b04e8b6ab4a92d9d504a3d89e2
+      internalID: -1657645832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_137
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 224
+        width: 36
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acf8107fb37d09e41afe78da8d7f0430
+      internalID: 1456451820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_138
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 208
+        width: 40
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e1355947d57dcb468605162fb55f75f
+      internalID: -1248412377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_139
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 208
+        width: 40
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47702d39401a2894ea0775a7b8a94484
+      internalID: -250564611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_140
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 32
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f3e275b9f96a764c85d1be6386672e5
+      internalID: 1492067473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_141
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 184
+        width: 40
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4d233308d6d7804cb32cea405e1d68e
+      internalID: -1602108090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_142
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 184
+        width: 18
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e46f3da60b8a6946892e7e8c5a4b778
+      internalID: 1400963155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_143
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 184
+        width: 18
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4048e5396278ef408bf21a0475f656a
+      internalID: 301139593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_144
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 32
+        width: 224
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ceecdb98f846124b9058df3c1cc8c60
+      internalID: -1321076166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_145
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 132
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23860caad4be3eb499b66729f1e8040a
+      internalID: -1438822907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_146
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 136
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99f9de74d7adf9241823aa3c9a8683f2
+      internalID: 281998508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_147
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 120
+        width: 40
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da116335c54600c4b8c0019d7201ec61
+      internalID: -1188152971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_148
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 120
+        width: 18
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 721f645ec873b164c95a12e3a70ddb12
+      internalID: -1975768495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_149
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 120
+        width: 18
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dae4978c097d52419a2ad2ed7f87656
+      internalID: -90596594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_150
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 116
+        width: 28
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73874b67d13c2024c949b44ba8ed5d4b
+      internalID: 363524432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_151
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 68
+        width: 38
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da6a1312b9bc820448ae1a4f4c4d8fac
+      internalID: -1075209326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_152
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 60
+        width: 38
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6aad168285dddcb4a82575497e942556
+      internalID: -1359878589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_153
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 68
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70fcdfaea11e9ea4389c83958520c526
+      internalID: 302274350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_154
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 60
+        width: 24
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd98eeed51113dd499e661703a5c49b5
+      internalID: -740374846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_155
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 86
+        width: 26
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e51f4bf2d9e722c479b0b34c772e9f2d
+      internalID: -130370913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_156
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 52
+        width: 28
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd7916d06bdc1b6419842e8f984acfb8
+      internalID: -908599261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_157
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 36
+        width: 20
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f100ef2247958804a83f87705162b329
+      internalID: -1532657432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_158
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 50
+        width: 22
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 980be3fcc4981fd40a2701032f6876b1
+      internalID: -1690284429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14_Basement_Black_Shadow_32x32_159
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 12
+        width: 120
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b9b65f1c694bdf4b81aa05db6de87d6
+      internalID: -808746104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      14_Basement_Black_Shadow_32x32_0: -520757585
+      14_Basement_Black_Shadow_32x32_1: -1116921930
+      14_Basement_Black_Shadow_32x32_10: -336382489
+      14_Basement_Black_Shadow_32x32_100: -2092757823
+      14_Basement_Black_Shadow_32x32_101: -690851094
+      14_Basement_Black_Shadow_32x32_102: 309593620
+      14_Basement_Black_Shadow_32x32_103: 1415627336
+      14_Basement_Black_Shadow_32x32_104: 373946423
+      14_Basement_Black_Shadow_32x32_105: -1774601363
+      14_Basement_Black_Shadow_32x32_106: 1750133591
+      14_Basement_Black_Shadow_32x32_107: -330363720
+      14_Basement_Black_Shadow_32x32_108: 1892185662
+      14_Basement_Black_Shadow_32x32_109: 1984650410
+      14_Basement_Black_Shadow_32x32_11: 485595797
+      14_Basement_Black_Shadow_32x32_110: -238492738
+      14_Basement_Black_Shadow_32x32_111: 1323992986
+      14_Basement_Black_Shadow_32x32_112: 1263812712
+      14_Basement_Black_Shadow_32x32_113: 91219947
+      14_Basement_Black_Shadow_32x32_114: 899795835
+      14_Basement_Black_Shadow_32x32_115: -250362204
+      14_Basement_Black_Shadow_32x32_116: 29964282
+      14_Basement_Black_Shadow_32x32_117: 534490111
+      14_Basement_Black_Shadow_32x32_118: 809954491
+      14_Basement_Black_Shadow_32x32_119: 2109618772
+      14_Basement_Black_Shadow_32x32_12: -149142760
+      14_Basement_Black_Shadow_32x32_120: -312671625
+      14_Basement_Black_Shadow_32x32_121: -694750459
+      14_Basement_Black_Shadow_32x32_122: -1410683048
+      14_Basement_Black_Shadow_32x32_123: -507242112
+      14_Basement_Black_Shadow_32x32_124: 247004847
+      14_Basement_Black_Shadow_32x32_125: -1101003612
+      14_Basement_Black_Shadow_32x32_126: -1030153660
+      14_Basement_Black_Shadow_32x32_127: -419491038
+      14_Basement_Black_Shadow_32x32_128: 394487516
+      14_Basement_Black_Shadow_32x32_129: -1488103491
+      14_Basement_Black_Shadow_32x32_13: 1346910084
+      14_Basement_Black_Shadow_32x32_130: 794118521
+      14_Basement_Black_Shadow_32x32_131: -371311602
+      14_Basement_Black_Shadow_32x32_132: 853517122
+      14_Basement_Black_Shadow_32x32_133: 50982151
+      14_Basement_Black_Shadow_32x32_134: 904502164
+      14_Basement_Black_Shadow_32x32_135: 1929885177
+      14_Basement_Black_Shadow_32x32_136: -1657645832
+      14_Basement_Black_Shadow_32x32_137: 1456451820
+      14_Basement_Black_Shadow_32x32_138: -1248412377
+      14_Basement_Black_Shadow_32x32_139: -250564611
+      14_Basement_Black_Shadow_32x32_14: -1250887596
+      14_Basement_Black_Shadow_32x32_140: 1492067473
+      14_Basement_Black_Shadow_32x32_141: -1602108090
+      14_Basement_Black_Shadow_32x32_142: 1400963155
+      14_Basement_Black_Shadow_32x32_143: 301139593
+      14_Basement_Black_Shadow_32x32_144: -1321076166
+      14_Basement_Black_Shadow_32x32_145: -1438822907
+      14_Basement_Black_Shadow_32x32_146: 281998508
+      14_Basement_Black_Shadow_32x32_147: -1188152971
+      14_Basement_Black_Shadow_32x32_148: -1975768495
+      14_Basement_Black_Shadow_32x32_149: -90596594
+      14_Basement_Black_Shadow_32x32_15: -704357710
+      14_Basement_Black_Shadow_32x32_150: 363524432
+      14_Basement_Black_Shadow_32x32_151: -1075209326
+      14_Basement_Black_Shadow_32x32_152: -1359878589
+      14_Basement_Black_Shadow_32x32_153: 302274350
+      14_Basement_Black_Shadow_32x32_154: -740374846
+      14_Basement_Black_Shadow_32x32_155: -130370913
+      14_Basement_Black_Shadow_32x32_156: -908599261
+      14_Basement_Black_Shadow_32x32_157: -1532657432
+      14_Basement_Black_Shadow_32x32_158: -1690284429
+      14_Basement_Black_Shadow_32x32_159: -808746104
+      14_Basement_Black_Shadow_32x32_16: 1708128285
+      14_Basement_Black_Shadow_32x32_17: -130121760
+      14_Basement_Black_Shadow_32x32_18: 304172330
+      14_Basement_Black_Shadow_32x32_19: -1112915504
+      14_Basement_Black_Shadow_32x32_2: -1100655171
+      14_Basement_Black_Shadow_32x32_20: 1555897074
+      14_Basement_Black_Shadow_32x32_21: -2144855090
+      14_Basement_Black_Shadow_32x32_22: 1747400142
+      14_Basement_Black_Shadow_32x32_23: 1360242930
+      14_Basement_Black_Shadow_32x32_24: 1594970227
+      14_Basement_Black_Shadow_32x32_25: -317241195
+      14_Basement_Black_Shadow_32x32_26: -376794969
+      14_Basement_Black_Shadow_32x32_27: 1082810599
+      14_Basement_Black_Shadow_32x32_28: 145518055
+      14_Basement_Black_Shadow_32x32_29: 798154073
+      14_Basement_Black_Shadow_32x32_3: -513669044
+      14_Basement_Black_Shadow_32x32_30: 1194626243
+      14_Basement_Black_Shadow_32x32_31: -805838608
+      14_Basement_Black_Shadow_32x32_32: -541269474
+      14_Basement_Black_Shadow_32x32_33: 270397422
+      14_Basement_Black_Shadow_32x32_34: 909183015
+      14_Basement_Black_Shadow_32x32_35: -2006376723
+      14_Basement_Black_Shadow_32x32_36: -260159645
+      14_Basement_Black_Shadow_32x32_37: -392309439
+      14_Basement_Black_Shadow_32x32_38: 957681888
+      14_Basement_Black_Shadow_32x32_39: -1867735567
+      14_Basement_Black_Shadow_32x32_4: 93105519
+      14_Basement_Black_Shadow_32x32_40: 1746124514
+      14_Basement_Black_Shadow_32x32_41: 521972368
+      14_Basement_Black_Shadow_32x32_42: 1039165828
+      14_Basement_Black_Shadow_32x32_43: 1851756713
+      14_Basement_Black_Shadow_32x32_44: 1867075315
+      14_Basement_Black_Shadow_32x32_45: -1273652862
+      14_Basement_Black_Shadow_32x32_46: -1965100193
+      14_Basement_Black_Shadow_32x32_47: 221422395
+      14_Basement_Black_Shadow_32x32_48: 1637498535
+      14_Basement_Black_Shadow_32x32_49: -1340354316
+      14_Basement_Black_Shadow_32x32_5: 1355006887
+      14_Basement_Black_Shadow_32x32_50: 1306665893
+      14_Basement_Black_Shadow_32x32_51: -1422591388
+      14_Basement_Black_Shadow_32x32_52: 749959730
+      14_Basement_Black_Shadow_32x32_53: -643010174
+      14_Basement_Black_Shadow_32x32_54: 1233533702
+      14_Basement_Black_Shadow_32x32_55: -1801914436
+      14_Basement_Black_Shadow_32x32_56: 645076628
+      14_Basement_Black_Shadow_32x32_57: 364329336
+      14_Basement_Black_Shadow_32x32_58: 787705637
+      14_Basement_Black_Shadow_32x32_59: 981065531
+      14_Basement_Black_Shadow_32x32_6: -536958550
+      14_Basement_Black_Shadow_32x32_60: -1852625676
+      14_Basement_Black_Shadow_32x32_61: -245657109
+      14_Basement_Black_Shadow_32x32_62: -2123386227
+      14_Basement_Black_Shadow_32x32_63: 1295982465
+      14_Basement_Black_Shadow_32x32_64: -2041267182
+      14_Basement_Black_Shadow_32x32_65: -1797120841
+      14_Basement_Black_Shadow_32x32_66: -1401955102
+      14_Basement_Black_Shadow_32x32_67: 1528638852
+      14_Basement_Black_Shadow_32x32_68: 257874758
+      14_Basement_Black_Shadow_32x32_69: 21777776
+      14_Basement_Black_Shadow_32x32_7: 85118565
+      14_Basement_Black_Shadow_32x32_70: -1572092893
+      14_Basement_Black_Shadow_32x32_71: -960329406
+      14_Basement_Black_Shadow_32x32_72: -1481811120
+      14_Basement_Black_Shadow_32x32_73: -699333595
+      14_Basement_Black_Shadow_32x32_74: -1808648711
+      14_Basement_Black_Shadow_32x32_75: -2016935926
+      14_Basement_Black_Shadow_32x32_76: 870707322
+      14_Basement_Black_Shadow_32x32_77: -1432594570
+      14_Basement_Black_Shadow_32x32_78: -1726329674
+      14_Basement_Black_Shadow_32x32_79: -2087370841
+      14_Basement_Black_Shadow_32x32_8: -560764583
+      14_Basement_Black_Shadow_32x32_80: -286933681
+      14_Basement_Black_Shadow_32x32_81: -410660558
+      14_Basement_Black_Shadow_32x32_82: -690736003
+      14_Basement_Black_Shadow_32x32_83: 2140324382
+      14_Basement_Black_Shadow_32x32_84: -240687393
+      14_Basement_Black_Shadow_32x32_85: -1600315903
+      14_Basement_Black_Shadow_32x32_86: 167037382
+      14_Basement_Black_Shadow_32x32_87: -1651514138
+      14_Basement_Black_Shadow_32x32_88: -1029303522
+      14_Basement_Black_Shadow_32x32_89: -1317395923
+      14_Basement_Black_Shadow_32x32_9: -1904809981
+      14_Basement_Black_Shadow_32x32_90: 800578666
+      14_Basement_Black_Shadow_32x32_91: 80088639
+      14_Basement_Black_Shadow_32x32_92: -1853782877
+      14_Basement_Black_Shadow_32x32_93: 1150155120
+      14_Basement_Black_Shadow_32x32_94: -1112774318
+      14_Basement_Black_Shadow_32x32_95: 410777175
+      14_Basement_Black_Shadow_32x32_96: 158252146
+      14_Basement_Black_Shadow_32x32_97: 1208356885
+      14_Basement_Black_Shadow_32x32_98: 1352914963
+      14_Basement_Black_Shadow_32x32_99: -1920780042
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
