@@ -32,10 +32,21 @@ public class PlayerController : MonoBehaviour
 
     void Attack() 
     {
-       
+        Vector3 mousePosition = Input.mousePosition;
+
+        Vector3 mouseWorldPosition = Camera.main.ScreenToWorldPoint(mousePosition);
+        mouseWorldPosition.z = 0; 
+
+        Vector3 playerPosition = transform.position;
+
+        Vector3 directionToMouse = mouseWorldPosition - playerPosition;
+
+    
+        directionToMouse.Normalize();
+
         if (weapon != null)
         {
-            weapon.Attack(transform.right);
+            weapon.Attack(directionToMouse);
         }
     }
 
