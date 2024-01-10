@@ -3,13 +3,20 @@ using UnityEngine.UI;
 
 public class HealthManager : MonoBehaviour
 {
-    public float health = 3f;
+    public float maxhealth = 3f;
+    public float health
+        ;
     private float damageTaken = 0f; // Nouvelle variable pour suivre les dégâts subis
 
     public Image[] hearts;
     public Sprite fullHeart;
     public Sprite emptyHeart;
     public Sprite halfHeart;
+
+    void Start()
+    {
+        health = maxhealth;
+    }
 
     void Update()
     {

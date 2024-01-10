@@ -13,7 +13,7 @@ public class PlayerMovement : MonoBehaviour
 
     private enum MovementState {idle, running};
 
-    [SerializeField] private float moveSpeed = 7f;
+    public float moveSpeed = 7f;
 
     void Start()
     {
