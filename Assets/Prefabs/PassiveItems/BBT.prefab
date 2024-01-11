@@ -103,6 +103,7 @@ MonoBehaviour:
   cooldoownReduction: 0.5
   heal: 1
   dialogueKey: 101
+  pickupSound: {fileID: 8300000, guid: 207e5135d4ac18a429316595c971cd4f, type: 3}
 --- !u!61 &5479255567872039956
 BoxCollider2D:
   m_ObjectHideFlags: 0

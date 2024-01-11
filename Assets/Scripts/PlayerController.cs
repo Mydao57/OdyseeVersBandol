@@ -10,6 +10,8 @@ public class PlayerController : MonoBehaviour
     private WeaponController weapon;
     private Text messageStat;
 
+    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +27,7 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(1))
         {
+
             Attack();
         }
     }

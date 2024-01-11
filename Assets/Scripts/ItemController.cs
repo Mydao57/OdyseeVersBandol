@@ -12,6 +12,8 @@ public class ItemController : MonoBehaviour
     private bool isInRange = false;
     public KeyCode dialogueKey = KeyCode.E;
 
+    public AudioClip pickupSound;
+
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +26,7 @@ public class ItemController : MonoBehaviour
     {
         if (isInRange && Input.GetKeyDown(dialogueKey))
         {
+            AudioSource.PlayClipAtPoint(pickupSound, Camera.main.transform.position);
             PickItem();
         }
     }
