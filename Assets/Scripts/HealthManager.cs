@@ -50,7 +50,11 @@ public class HealthManager : MonoBehaviour
         // Vérifier si la vie est égale à 0
         if (health == 0f)
         {
-            
+            if (GameObject.Find("CoinManager").GetComponent<CoinManager>())
+            {
+                GameObject.Find("CoinManager").GetComponent<CoinManager>().saveCoins();
+            }
+
             if ( !hasRotated)
             {
                 AudioSource.PlayClipAtPoint(death, Camera.main.transform.position);
@@ -59,6 +63,8 @@ public class HealthManager : MonoBehaviour
                 Invoke("SwitchScene", 1.5f);              
                 hasRotated = true;
             }
+
+            
 
         }
     }
