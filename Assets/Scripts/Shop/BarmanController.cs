@@ -8,6 +8,8 @@ public class BarmanController : MonoBehaviour
     public KeyCode dialogueKey = KeyCode.E;
     public GameObject shop;
 
+    public Canvas WeaponSellerCanvas;
+
     private bool isInRange = false;
 
     public void Start()
@@ -27,6 +29,7 @@ public class BarmanController : MonoBehaviour
     {
         if (other.CompareTag("Player"))  
         {
+            WeaponSellerCanvas.gameObject.SetActive(true);
             isInRange = true;
         }
     }
@@ -35,6 +38,8 @@ public class BarmanController : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            WeaponSellerCanvas.gameObject.SetActive(false);
+
             shop.SetActive(false);
             isInRange = false;
         }

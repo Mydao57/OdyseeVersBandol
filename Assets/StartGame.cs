@@ -8,6 +8,10 @@ public class StartGame : MonoBehaviour
     public float interactionDistance = 2f; // Distance à laquelle le joueur peut interagir avec le barman
     public KeyCode interactionKey = KeyCode.E; // Touche pour l'interaction
 
+    public Canvas BarmanCanvas;
+
+
+
     private void Update()
     {
         // Vérifier si le joueur est dans la zone d'interaction et appuie sur la touche spécifiée
@@ -37,5 +41,25 @@ public class StartGame : MonoBehaviour
         }
 
         return false;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+
+        if (collision.CompareTag("Player"))
+        {
+
+            BarmanCanvas.gameObject.SetActive(true);
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+
+            BarmanCanvas.gameObject.SetActive(false);
+        }
+
     }
 }
