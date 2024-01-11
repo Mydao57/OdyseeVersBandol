@@ -6,7 +6,6 @@ public class BarmanController : MonoBehaviour
 {
     public float distanceToTrigger = 2f;
     public KeyCode dialogueKey = KeyCode.E;
-    public DialogueManager dialogueManager;
     public GameObject shop;
 
     private bool isInRange = false;
