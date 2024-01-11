@@ -22,7 +22,7 @@ public class ItemController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isInRange && Input.GetKeyDown(dialogueKey))
+        if (isInRange)
         {
             PickItem();
         }
