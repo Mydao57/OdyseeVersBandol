@@ -3,15 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using static UnityEditor.Progress;
+
 public class WeaponShopManagerScript : MonoBehaviour
 {
     public int[,] shopItems = new int[5, 5];
-    public float coins = 0;
+    public int coins = 0;
     public Text coinsText;
-    public ShopData shopData; 
+    SaveLoadManager saveLoadManager = new SaveLoadManager();
+
     void Start()
     {
-       
+        coins = saveLoadManager.LoadPlayerData().coins;
 
         coinsText.text = "Coins : " + coins.ToString();
 
@@ -24,13 +27,6 @@ public class WeaponShopManagerScript : MonoBehaviour
         shopItems[2, 2] = 20;
         shopItems[2, 3] = 30;
         shopItems[2, 4] = 40;
-
-        SaveLoadManager saveLoadManager = new SaveLoadManager();
-
-        shopData = saveLoadManager.LoadPlayerData();
-
-        coins = shopData.coins;
-        coinsText.text = "Coins : " + coins.ToString();
 
 
     }
@@ -46,28 +42,16 @@ public class WeaponShopManagerScript : MonoBehaviour
     public void BuyItem()
     {
         GameObject buttonRef = GameObject.FindGameObjectWithTag("Event").GetComponent<EventSystem>().currentSelectedGameObject;
-        Vector3 weaponOffset = new Vector3(1f, 0f, 0f);
 
         if(coins >= shopItems[2, buttonRef.GetComponent<ButtonInfo>().itemId])
         {
 
-
-
-            GameObject player = GameObject.Find("Player");
-
             coins -= shopItems[2, buttonRef.GetComponent<ButtonInfo>().itemId];
             coinsText.text = "Coins : " + coins.ToString();
 
-            if (player.GetComponentInChildren<WeaponController>() != null)
-            {
-                Destroy(player.GetComponentInChildren<WeaponController>().gameObject);
 
-            }
+            saveLoadManager.SavePlayerData(coins, buttonRef.GetComponent<ButtonInfo>().itemId);
 
-            WeaponController weapon = Instantiate(buttonRef.GetComponent<ButtonInfo>().weapon, player.transform);
-            weapon.transform.position =  player.transform.position + weaponOffset;
-
-            player.GetComponent<PlayerController>().EquipWeapon(weapon);
 
         }
 

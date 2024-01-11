@@ -55,6 +55,10 @@ public class TriggerZoneBoss : MonoBehaviour
 
         if (enemies.Length == 0)
         {
+            if (GameObject.Find("CoinManager").GetComponent<CoinManager>())
+            {
+                GameObject.Find("CoinManager").GetComponent<CoinManager>().SaveCoins();
+            }
             SceneManager.LoadScene("EndGame");
         }
     }
