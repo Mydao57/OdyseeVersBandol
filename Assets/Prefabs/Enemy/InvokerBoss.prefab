@@ -283,6 +283,7 @@ MonoBehaviour:
   weapon: {fileID: 0}
   movementSpeed: 0
   range: 0.8
+  coins: 2
   enemiesToSpawn:
   - {fileID: 6706442190334387735, guid: 863aa79eed533394fa12d6781fb5d729, type: 3}
   - {fileID: 6706442190334387735, guid: 863aa79eed533394fa12d6781fb5d729, type: 3}
@@ -511,7 +512,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_TargetDisplay: 0
 --- !u!114 &1413929682823116443
 MonoBehaviour:

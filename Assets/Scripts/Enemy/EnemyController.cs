@@ -10,6 +10,7 @@ public class EnemyController : MonoBehaviour
     [SerializeField] protected WeaponController weapon = null;
     [SerializeField] public float movementSpeed = 3.0f;
     [SerializeField] protected float range;
+    public int coins = 2;
 
     protected float distance;
 
@@ -72,6 +73,10 @@ public class EnemyController : MonoBehaviour
         if (GameObject.Find("Score").GetComponent<ScoreManager>())
         {
             GameObject.Find("Score").GetComponent<ScoreManager>().AddScore(score);
+        }
+        if (GameObject.Find("CoinManager").GetComponent<CoinManager>())
+        {
+            GameObject.Find("CoinManager").GetComponent<CoinManager>().addCoin(coins);
         }
     }
 }
