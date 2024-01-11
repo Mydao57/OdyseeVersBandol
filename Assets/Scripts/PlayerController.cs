@@ -23,7 +23,7 @@ public class PlayerController : MonoBehaviour
 
     void inputHandler()
     {
-        if (Input.GetMouseButtonDown(1))
+        if (Input.GetMouseButtonDown(0))
         {
             Attack();
         }
