@@ -16,7 +16,7 @@ public class ShopData
 public class SaveLoadManager
 {
     // Save player data
-    public  void SavePlayerData(int coins, int weaponID)
+    public void SavePlayerData(int coins, int weaponID)
     {
         ShopData shopdata = new ShopData(coins, weaponID);
         string jsonData = JsonUtility.ToJson(shopdata);
