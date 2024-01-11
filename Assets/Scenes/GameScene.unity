@@ -1176,6 +1176,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1572931760}
+  - component: {fileID: 1572931761}
   m_Layer: 0
   m_Name: WeaponManager
   m_TagString: Untagged
@@ -1198,6 +1199,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1572931761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1572931759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29ea5e73387fbff44875c98d04128d18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weapons:
+  - {fileID: 2622579978029509923, guid: 762e3fdf8c4451b4a92a40490b3d0419, type: 3}
+  - {fileID: 29291677215649687, guid: 4c447d0e97004ad40bc02035a1ccc763, type: 3}
+  - {fileID: 377741537472622579, guid: 72180b2cbe06384448fb53a93a3d9b7d, type: 3}
+  - {fileID: 5489463460939935464, guid: 27f419e13bc82b04c854fae4b6bb3051, type: 3}
 --- !u!1 &1891298661
 GameObject:
   m_ObjectHideFlags: 0
@@ -1425,9 +1443,17 @@ PrefabInstance:
       propertyPath: hearts.Array.data[5]
       value: 
       objectReference: {fileID: 172202666}
+    - target: {fileID: 2991501641094103001, guid: 910ca3d5de091da4a991390d534cc47a, type: 3}
+      propertyPath: weapon
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 3592748048242515587, guid: 910ca3d5de091da4a991390d534cc47a, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 3621078055802088067, guid: 910ca3d5de091da4a991390d534cc47a, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5297820168516770119, guid: 910ca3d5de091da4a991390d534cc47a, type: 3}
       propertyPath: damage
@@ -1482,7 +1508,8 @@ PrefabInstance:
       value: -0.72
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 1702856834119076161, guid: 910ca3d5de091da4a991390d534cc47a, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 910ca3d5de091da4a991390d534cc47a, type: 3}

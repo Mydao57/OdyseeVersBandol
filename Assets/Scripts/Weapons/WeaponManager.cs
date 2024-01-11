@@ -4,10 +4,39 @@ using UnityEngine;
 
 public class NewBehaviourScript : MonoBehaviour
 {
-    // Start is called before the first frame update
+    SaveLoadManager saveLoadManager = new SaveLoadManager();
+    public List<WeaponController> weapons;
+    int weaponId = 0;
     void Start()
     {
-        
+        GameObject player = GameObject.Find("Player"); 
+
+        weaponId = saveLoadManager.LoadPlayerData().weaponID;
+        Debug.Log("Weapon ID: " + weaponId);
+
+
+        WeaponController weapon =  Instantiate(weapons[weaponId-1], transform.position, Quaternion.identity);
+
+        switch (weaponId)
+        {
+            case 1:
+                weapon.transform.position = player.transform.position + new Vector3(0.7f, -0.2f, 0f);
+                break;
+            case 2:
+                weapon.transform.position = player.transform.position + new Vector3(0.5f, -0.1f, 0f);
+                break;
+            case 3:
+                weapon.transform.position = player.transform.position + new Vector3(0.35f, -0.1f, 0f);
+                break;
+            case 4:
+                weapon.transform.position = player.transform.position + new Vector3(0.5f, -0.11f, 0f);
+                break;
+        }
+
+
+        weapon.transform.parent = player.transform;
+        player.GetComponent<PlayerController>().EquipWeapon(weapon);
+
     }
 
     // Update is called once per frame
