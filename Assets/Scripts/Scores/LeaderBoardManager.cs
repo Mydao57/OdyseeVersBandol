@@ -19,7 +19,8 @@ public class LeaderBoardManager : MonoBehaviour
 
     IEnumerator CallLeaderboard(Action<IEnumerable<Score>> callback)
     {
-        string apiUrl = "https://localhost:7104/LeaderBoard";
+        Debug.Log("Calling leaderboard");
+        string apiUrl = "http://mydao.fr:5000/Leaderboard";
 
         using (UnityWebRequest www = UnityWebRequest.Get(apiUrl))
         {
