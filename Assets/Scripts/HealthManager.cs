@@ -1,12 +1,12 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class HealthManager : MonoBehaviour
 {
-    public float maxhealth = 3f;
+    public float maxhealth;
     public float health;
-    private float damageTaken = 0f; // Nouvelle variable pour suivre les dégâts subis
+    private float damageTaken = 0f; // Nouvelle variable pour suivre les dï¿½gï¿½ts subis
 
     public Image[] hearts;
     public Sprite fullHeart;
@@ -30,24 +30,16 @@ public class HealthManager : MonoBehaviour
     {
         for (int i = 0; i < hearts.Length; i++)
         {
-            if (i < health)
+            if (i < maxhealth)
             {
-                if (i == Mathf.FloorToInt(health - damageTaken)) // Si l'index correspond au cœur affecté par les dégâts
+                if (i == Mathf.FloorToInt(maxhealth - damageTaken))
                 {
-                    hearts[i].sprite = halfHeart;
+                    hearts[i].sprite = emptyHeart;
                 }
-                else
-                {
-                    hearts[i].sprite = fullHeart;
-                }
-            }
-            else
-            {
-                hearts[i].sprite = emptyHeart;
             }
         }
 
-        // Vérifier si la vie est égale à 0
+        // Vï¿½rifier si la vie est ï¿½gale ï¿½ 0
         if (health == 0f)
         {
             if (GameObject.Find("CoinManager").GetComponent<CoinManager>())
@@ -56,12 +48,12 @@ public class HealthManager : MonoBehaviour
             }
 
 
-            if ( !hasRotated)
+            if (!hasRotated)
             {
                 AudioSource.PlayClipAtPoint(death, Camera.main.transform.position);
                 player.transform.Rotate(Vector3.forward * 90f);
                 playerMovement.enabled = false;
-                Invoke("SwitchScene", 1.5f);              
+                Invoke("SwitchScene", 1.5f);
                 hasRotated = true;
             }
 
@@ -73,7 +65,7 @@ public class HealthManager : MonoBehaviour
         SceneManager.LoadScene("GameOver");
     }
 
-    // Méthode pour prendre des dégâts
+    // Mï¿½thode pour prendre des dï¿½gï¿½ts
     public void TakeDamage(float damage)
     {
         damageTaken += damage;
@@ -84,10 +76,5 @@ public class HealthManager : MonoBehaviour
         {
             health = 0f;
         }
-    }
-
-    public void InflictDamageOnClick()
-    {
-        TakeDamage(0.5f);
     }
 }

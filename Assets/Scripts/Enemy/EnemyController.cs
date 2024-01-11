@@ -70,13 +70,25 @@ public class EnemyController : MonoBehaviour
 
     protected void OnDestroy()
     {
-        if (GameObject.Find("Score").GetComponent<ScoreManager>())
+        GameObject scoreObject = GameObject.Find("Score");
+        if (scoreObject != null)
         {
-            GameObject.Find("Score").GetComponent<ScoreManager>().AddScore(score);
+            ScoreManager scoreManager = scoreObject.GetComponent<ScoreManager>();
+            if (scoreManager != null)
+            {
+                scoreManager.AddScore(score);
+            }
         }
-        if (GameObject.Find("CoinManager").GetComponent<CoinManager>())
+
+        GameObject coinManagerObject = GameObject.Find("CoinManager");
+        if (coinManagerObject != null)
         {
-            GameObject.Find("CoinManager").GetComponent<CoinManager>().AddCoins(coins);
+            CoinManager coinManager = coinManagerObject.GetComponent<CoinManager>();
+            if (coinManager != null)
+            {
+                coinManager.AddCoins(coins);
+            }
         }
     }
+
 }
