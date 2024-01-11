@@ -12,8 +12,11 @@ public class HealthManager : MonoBehaviour
     public Sprite fullHeart;
     public Sprite emptyHeart;
     public Sprite halfHeart;
+    
     public SpriteRenderer player;
+    
     private bool hasRotated = false;
+
     public PlayerMovement playerMovement;
     public AudioClip hit;
     public AudioClip death;
@@ -55,16 +58,16 @@ public class HealthManager : MonoBehaviour
                 GameObject.Find("CoinManager").GetComponent<CoinManager>().saveCoins();
             }
 
-            if ( !hasRotated)
+            if (!hasRotated)
             {
                 AudioSource.PlayClipAtPoint(death, Camera.main.transform.position);
                 player.transform.Rotate(Vector3.forward * 90f);
                 playerMovement.enabled = false;
-                Invoke("SwitchScene", 1.5f);              
+                Invoke("SwitchScene", 1.5f);
                 hasRotated = true;
             }
 
-            
+
 
         }
     }
