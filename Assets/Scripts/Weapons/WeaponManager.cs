@@ -12,11 +12,15 @@ public class NewBehaviourScript : MonoBehaviour
         GameObject player = GameObject.Find("Player"); 
 
         weaponId = saveLoadManager.LoadPlayerData().weaponID;
-        Debug.Log("Weapon ID: " + weaponId);
+
+        if(weaponId == 0)
+        {
+            weaponId = 1;
+        }
 
 
         WeaponController weapon =  Instantiate(weapons[weaponId-1], transform.position, Quaternion.identity);
-
+        
         switch (weaponId)
         {
             case 1:
