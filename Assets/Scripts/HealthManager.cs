@@ -15,6 +15,9 @@ public class HealthManager : MonoBehaviour
     public SpriteRenderer player;
     private bool hasRotated = false;
     public PlayerMovement playerMovement;
+    public AudioClip hit;
+    public AudioClip death;
+
 
     void Start()
     {
@@ -47,8 +50,10 @@ public class HealthManager : MonoBehaviour
         // Vérifier si la vie est égale à 0
         if (health == 0f)
         {
-            if( !hasRotated)
+            
+            if ( !hasRotated)
             {
+                AudioSource.PlayClipAtPoint(death, Camera.main.transform.position);
                 player.transform.Rotate(Vector3.forward * 90f);
                 playerMovement.enabled = false;
                 Invoke("SwitchScene", 1.5f);              
@@ -68,6 +73,7 @@ public class HealthManager : MonoBehaviour
     {
         damageTaken += damage;
         health -= damage;
+        AudioSource.PlayClipAtPoint(hit, Camera.main.transform.position);
 
         if (health < 0f)
         {

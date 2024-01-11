@@ -764,6 +764,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -4438223221679240336, guid: 910ca3d5de091da4a991390d534cc47a, type: 3}
+      propertyPath: hit
+      value: 
+      objectReference: {fileID: 8300000, guid: 160fa6d23c66acb4caef52465782a56f, type: 3}
+    - target: {fileID: -4438223221679240336, guid: 910ca3d5de091da4a991390d534cc47a, type: 3}
+      propertyPath: death
+      value: 
+      objectReference: {fileID: 8300000, guid: 7beca122f396f754091471880fb65cb3, type: 3}
+    - target: {fileID: -4438223221679240336, guid: 910ca3d5de091da4a991390d534cc47a, type: 3}
       propertyPath: fullHeart
       value: 
       objectReference: {fileID: 1571233246, guid: 80142639832cfe34684bd7dd12cd5d4d, type: 3}
@@ -771,6 +779,10 @@ PrefabInstance:
       propertyPath: halfHeart
       value: 
       objectReference: {fileID: 1916759425, guid: 80142639832cfe34684bd7dd12cd5d4d, type: 3}
+    - target: {fileID: -4438223221679240336, guid: 910ca3d5de091da4a991390d534cc47a, type: 3}
+      propertyPath: soundClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 160fa6d23c66acb4caef52465782a56f, type: 3}
     - target: {fileID: -4438223221679240336, guid: 910ca3d5de091da4a991390d534cc47a, type: 3}
       propertyPath: emptyHeart
       value: 
