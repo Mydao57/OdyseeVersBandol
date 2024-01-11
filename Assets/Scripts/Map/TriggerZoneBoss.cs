@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 public class TriggerZoneBoss : MonoBehaviour
 {
@@ -54,7 +55,7 @@ public class TriggerZoneBoss : MonoBehaviour
 
         if (enemies.Length == 0)
         {
-            // Le code à exécuter lorsque tous les ennemis sont éliminés, si nécessaire.
+            SceneManager.LoadScene("EndGame");
         }
     }
 }
