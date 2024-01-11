@@ -12,10 +12,15 @@ public class HealthManager : MonoBehaviour
     public Sprite fullHeart;
     public Sprite emptyHeart;
     public Sprite halfHeart;
+    public SpriteRenderer player;
+    private bool hasRotated = false;
+    public PlayerMovement playerMovement;
 
     void Start()
     {
         health = maxhealth;
+        player = GetComponent<SpriteRenderer>();
+        playerMovement = GetComponent<PlayerMovement>();
     }
 
     void Update()
@@ -42,9 +47,20 @@ public class HealthManager : MonoBehaviour
         // Vérifier si la vie est égale à 0
         if (health == 0f)
         {
-            // Charger une nouvelle scène (remplacez "NouvelleScene" par le nom de votre scène)
-            SceneManager.LoadScene("GameOver");
+            if( !hasRotated)
+            {
+                player.transform.Rotate(Vector3.forward * 90f);
+                playerMovement.enabled = false;
+                Invoke("SwitchScene", 1.5f);              
+                hasRotated = true;
+            }
+
         }
+    }
+
+    public void SwitchScene()
+    {
+        SceneManager.LoadScene("GameOver");
     }
 
     // Méthode pour prendre des dégâts
