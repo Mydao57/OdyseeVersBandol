@@ -595,6 +595,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7167368427383142000, guid: 56c2492c2201d804cbd13ea3577f1481, type: 3}
+      propertyPath: damage
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 8559383551711596399, guid: 56c2492c2201d804cbd13ea3577f1481, type: 3}
       propertyPath: m_Name
       value: SuitcaseController

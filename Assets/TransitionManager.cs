@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.PackageManager;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -25,13 +24,16 @@ public class TransitionManager : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyUp(KeyCode.Return))
-        {
-            AudioSource.PlayClipAtPoint(soundClip, Camera.main.transform.position);
-            _endingSceneTransition.SetActive(true);
-            Invoke(nameof(LoadNextLevel), 1.5f);
-            
+        if(SceneManager.GetActiveScene().buildIndex == 0 ) {
+            if (Input.GetKeyUp(KeyCode.Return))
+            {
+                AudioSource.PlayClipAtPoint(soundClip, Camera.main.transform.position);
+                _endingSceneTransition.SetActive(true);
+                Invoke(nameof(LoadNextLevel), 1.5f);
+
+            }
         }
+        
     }
 
     private void LoadNextLevel()
