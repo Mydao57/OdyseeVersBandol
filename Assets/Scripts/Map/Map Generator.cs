@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class WagonGenerator : MonoBehaviour
+public class MapGenerator : MonoBehaviour
 {
     /*public GameObject playerPrefab;*/
     public GameObject defaultZonePrefab;
