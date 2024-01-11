@@ -12150,6 +12150,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obstaclePrefab: {fileID: 3114561383252838210, guid: b702f08a5cb3c8d4fa92f6639d111d36, type: 3}
+  obstaclePrefab2: {fileID: 3114561383252838210, guid: b702f08a5cb3c8d4fa92f6639d111d36, type: 3}
   spawnPointsListLeft:
   - {fileID: 7130950045317102236}
   - {fileID: 9003499664697942054}
