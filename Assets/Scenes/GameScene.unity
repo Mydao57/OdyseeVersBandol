@@ -326,7 +326,7 @@ MonoBehaviour:
   zoneLvl4Prefab: {fileID: 4763161348695946587, guid: 7e989f0179a1f51499349117670164dd, type: 3}
   bossZonePrefab: {fileID: 2659419720064101307, guid: 90c1d6b628ddb054d8c4cddf6803e181, type: 3}
   minZonesPerLevel: 1
-  maxZonesPerLevel: 5
+  maxZonesPerLevel: 1
   grid: {fileID: 130190464}
 --- !u!4 &1335781657
 Transform:
