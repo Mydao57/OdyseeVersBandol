@@ -81,6 +81,19 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -114,7 +127,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 19
-        y: 200
+        y: 100
         width: 78
         height: 98
       alignment: 0
@@ -124,8 +137,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cf98fc85c97192a4196012ed45bf0869
-      internalID: -154741415
+      spriteID: 7981f7423abbcce4e882488876868f62
+      internalID: 1855535433
       vertices: []
       indices: 
       edges: []
@@ -135,69 +148,6 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 169
-        y: 200
-        width: 78
-        height: 99
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f5ebbb0761e4f7443aa9cfee94a24f3b
-      internalID: 931224947
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MechaInvoc_2
-      rect:
-        serializedVersion: 2
-        x: 315
-        y: 200
-        width: 82
-        height: 98
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d04c6b725d8374042860a5d995f6b69f
-      internalID: 1485686703
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MechaInvoc_3
-      rect:
-        serializedVersion: 2
-        x: 463
-        y: 200
-        width: 84
-        height: 98
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e990d04d48da7fb43b611f37887422ba
-      internalID: 778620445
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MechaInvoc_4
-      rect:
-        serializedVersion: 2
-        x: 19
         y: 100
         width: 76
         height: 98
@@ -208,17 +158,59 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 69d6d04c23b4c734cb14b6e864a88400
-      internalID: 688001862
+      spriteID: 957debeb0620ca7449e043286e122b3c
+      internalID: -1442429225
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MechaInvoc_5
+      name: MechaInvoc_2
       rect:
         serializedVersion: 2
-        x: 165
+        x: 319
+        y: 100
+        width: 78
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e06ae1994181c7438c44577b18d19b3
+      internalID: 1265982932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechaInvoc_3
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 100
+        width: 78
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0212bb668ced6d2408a246eb63dfdfed
+      internalID: 1966651422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechaInvoc_4
+      rect:
+        serializedVersion: 2
+        x: 615
         y: 100
         width: 82
         height: 99
@@ -229,17 +221,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bb8930d0e505dd347a8e0745a7cdc66a
-      internalID: -1499332104
+      spriteID: 4cb75ebcfc8d13f4bb407ed72ad71ae8
+      internalID: 1181570390
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MechaInvoc_6
+      name: MechaInvoc_5
       rect:
         serializedVersion: 2
-        x: 313
+        x: 763
         y: 100
         width: 84
         height: 98
@@ -250,56 +242,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6bca6ea1ceee58049ba5411ffa1ab850
-      internalID: -157967912
+      spriteID: 61782d4691919c444b277604cf96cc5a
+      internalID: -1706147361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechaInvoc_6
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 0
+        width: 82
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c775f1ab4d3901640a7125f7c5d78081
+      internalID: -1151363996
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
       name: MechaInvoc_7
-      rect:
-        serializedVersion: 2
-        x: 469
-        y: 100
-        width: 78
-        height: 98
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2284b1c9d866d0e46a251e11f2914e9f
-      internalID: 1819449766
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MechaInvoc_8
-      rect:
-        serializedVersion: 2
-        x: 19
-        y: 0
-        width: 78
-        height: 98
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 51b8b9ea31c5f274fa1e9042bc9a3cd0
-      internalID: 2087958266
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MechaInvoc_9
       rect:
         serializedVersion: 2
         x: 163
@@ -313,14 +284,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4a88f833747699d4992f6cb5544a66a8
-      internalID: 1684000083
+      spriteID: b699d7f732f373b46a4082bb8d350e28
+      internalID: 1653975914
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MechaInvoc_10
+      name: MechaInvoc_8
       rect:
         serializedVersion: 2
         x: 315
@@ -334,8 +305,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d20a2d60c8e63fc47a2477d7ab1f323d
-      internalID: 1811884244
+      spriteID: afb4e9ba8ad64a547b404dd6b05e1781
+      internalID: -217689302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechaInvoc_9
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 0
+        width: 84
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee89689c0cc9bdb428b8b8cc29b91d4c
+      internalID: -2007858626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MechaInvoc_10
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 0
+        width: 78
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1143ac7723ed0364b9c81d353cc3c8e6
+      internalID: 1376461211
       vertices: []
       indices: 
       edges: []
@@ -351,17 +364,17 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      MechaInvoc_0: -154741415
-      MechaInvoc_1: 931224947
-      MechaInvoc_10: 1811884244
-      MechaInvoc_2: 1485686703
-      MechaInvoc_3: 778620445
-      MechaInvoc_4: 688001862
-      MechaInvoc_5: -1499332104
-      MechaInvoc_6: -157967912
-      MechaInvoc_7: 1819449766
-      MechaInvoc_8: 2087958266
-      MechaInvoc_9: 1684000083
+      MechaInvoc_0: 1855535433
+      MechaInvoc_1: -1442429225
+      MechaInvoc_10: 1376461211
+      MechaInvoc_2: 1265982932
+      MechaInvoc_3: 1966651422
+      MechaInvoc_4: 1181570390
+      MechaInvoc_5: -1706147361
+      MechaInvoc_6: -1151363996
+      MechaInvoc_7: 1653975914
+      MechaInvoc_8: -217689302
+      MechaInvoc_9: -2007858626
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
