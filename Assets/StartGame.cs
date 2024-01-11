@@ -57,8 +57,10 @@ public class StartGame : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-
+            if (BarmanCanvas.gameObject  != null)
+            {
             BarmanCanvas.gameObject.SetActive(false);
+            }
         }
 
     }

@@ -25,7 +25,7 @@ public class TransitionManager : MonoBehaviour
     private void Update()
     {
         if(SceneManager.GetActiveScene().buildIndex == 0 ) {
-            if (Input.GetKeyUp(KeyCode.Return))
+            if (Input.anyKeyDown)
             {
                 AudioSource.PlayClipAtPoint(soundClip, Camera.main.transform.position);
                 _endingSceneTransition.SetActive(true);

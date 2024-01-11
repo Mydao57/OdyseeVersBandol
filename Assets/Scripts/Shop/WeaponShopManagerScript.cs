@@ -23,20 +23,12 @@ public class WeaponShopManagerScript : MonoBehaviour
         shopItems[1, 3] = 3;
         shopItems[1, 4] = 4;
 
-        shopItems[2, 1] = 10;
-        shopItems[2, 2] = 20;
-        shopItems[2, 3] = 30;
-        shopItems[2, 4] = 40;
+        shopItems[2, 1] = 0;
+        shopItems[2, 2] = 30;
+        shopItems[2, 3] = 100;
+        shopItems[2, 4] = 200;
 
 
-    }
-
-    void Update()
-    {
-
-       
-
-     
     }
 
     public void BuyItem()
