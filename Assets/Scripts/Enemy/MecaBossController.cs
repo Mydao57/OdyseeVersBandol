@@ -17,6 +17,13 @@ public class MecaBossController : EnemyController
     [SerializeField]
     private GameObject energyBallPrefab;
 
+    [SerializeField]
+    private AudioSource ball;
+    [SerializeField]
+    private AudioSource trainSound;
+    [SerializeField]
+    private AudioSource dashSound;
+
     private bool move = true;
 
     Animator animator;
@@ -82,6 +89,7 @@ public class MecaBossController : EnemyController
 
         train.GetComponent<GhostTrainBehaviour>().DirectionChecker(player.transform.position - train.transform.position); ;
         move = true;
+        trainSound.Play();
 
     }
 
@@ -99,6 +107,11 @@ public class MecaBossController : EnemyController
 
         energyBall.GetComponent<EnergyBallBehaviour>().DirectionChecker(player.transform.position - this.transform.position); ;
         move = true;
+
+
+        ball.Play();
+
+
     }
 
     protected void Attack3()
@@ -110,6 +123,8 @@ public class MecaBossController : EnemyController
         
 
         move = true;
+
+        dashSound.Play();
 
 
     }

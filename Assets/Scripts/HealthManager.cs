@@ -15,9 +15,9 @@ public class HealthManager : MonoBehaviour
     public SpriteRenderer player;
     private bool hasRotated = false;
     public PlayerMovement playerMovement;
-    public AudioClip hit;
-    public AudioClip death;
 
+    public AudioSource hit;
+    public AudioSource death;
 
     void Start()
     {
@@ -59,7 +59,9 @@ public class HealthManager : MonoBehaviour
 
             if (!hasRotated)
             {
-                AudioSource.PlayClipAtPoint(death, Camera.main.transform.position);
+
+                death.Play();
+
                 player.transform.Rotate(Vector3.forward * 90f);
                 playerMovement.enabled = false;
                 Invoke("SwitchScene", 1.5f);
@@ -78,7 +80,8 @@ public class HealthManager : MonoBehaviour
     {
         damageTaken += damage;
         health -= damage;
-        AudioSource.PlayClipAtPoint(hit, Camera.main.transform.position);
+
+        hit.Play();
 
         if (health < 0f)
         {
