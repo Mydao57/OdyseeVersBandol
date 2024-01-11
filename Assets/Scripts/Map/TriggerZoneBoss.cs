@@ -1,6 +1,10 @@
 using UnityEngine;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
+using System.Collections;
+using UnityEngine.Networking;
+using System.IO;
+using System;
 
 public class TriggerZoneBoss : MonoBehaviour
 {
@@ -8,12 +12,27 @@ public class TriggerZoneBoss : MonoBehaviour
     public List<Transform> spawnPoints = new List<Transform>();
     public GameObject WallLeft;
 
+    public ScoreManager scoreManager;
+
     private bool triggerActivated = false;
     private bool gameActive = false;
+
+    private string filePath;
+    private PlayerDataJson existingPlayerData;
+
+    private string serverURL = "http://mydao.fr:5000";
+
+    private bool hasSended = false;
 
     void Start()
     {
         SetWallsActive(false);
+
+        scoreManager = GameObject.Find("Score").GetComponent<ScoreManager>();
+
+        filePath = Application.persistentDataPath + "/data.json";
+        string existingData = File.ReadAllText(filePath);
+        existingPlayerData = JsonUtility.FromJson<PlayerDataJson>(existingData);
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -59,7 +78,19 @@ public class TriggerZoneBoss : MonoBehaviour
             {
                 GameObject.Find("CoinManager").GetComponent<CoinManager>().SaveCoins();
             }
+            
+            if (!hasSended)
+            {
+                string url = $"mydao.fr:5000/Score?name={existingPlayerData.username}&score={scoreManager.scoreValue}";
+
+                UnityWebRequest www = UnityWebRequest.Get(url);
+                www.SendWebRequest();
+                hasSended = true;
+                
+            }
             SceneManager.LoadScene("EndGame");
+
         }
+
     }
 }

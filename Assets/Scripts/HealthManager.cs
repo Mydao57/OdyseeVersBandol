@@ -6,7 +6,7 @@ public class HealthManager : MonoBehaviour
 {
     public float maxhealth;
     public float health;
-    private float damageTaken = 0f; // Nouvelle variable pour suivre les d�g�ts subis
+    private float damageTaken = 0f; 
 
     public Image[] hearts;
     public Sprite fullHeart;
@@ -28,6 +28,16 @@ public class HealthManager : MonoBehaviour
 
     void Update()
     {
+
+        if( damageTaken == 6f)
+        {
+            for (int i = 0; i < hearts.Length; i++)
+            {
+                hearts[i].sprite = emptyHeart;
+            }
+        }
+
+
         for (int i = 0; i < hearts.Length; i++)
         {
             if (i < maxhealth)
@@ -39,7 +49,6 @@ public class HealthManager : MonoBehaviour
             }
         }
 
-        // V�rifier si la vie est �gale � 0
         if (health == 0f)
         {
             if (GameObject.Find("CoinManager").GetComponent<CoinManager>())
@@ -65,7 +74,6 @@ public class HealthManager : MonoBehaviour
         SceneManager.LoadScene("GameOver");
     }
 
-    // M�thode pour prendre des d�g�ts
     public void TakeDamage(float damage)
     {
         damageTaken += damage;
