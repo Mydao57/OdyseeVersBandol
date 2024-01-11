@@ -16,7 +16,7 @@ public class WeaponShopManagerScript : MonoBehaviour
     {
         coins = saveLoadManager.LoadPlayerData().coins;
 
-        coinsText.text = "Coins : " + coins.ToString();
+        coinsText.text = coins.ToString();
 
         shopItems[1, 1] = 1;
         shopItems[1, 2] = 2;
@@ -47,7 +47,7 @@ public class WeaponShopManagerScript : MonoBehaviour
         {
 
             coins -= shopItems[2, buttonRef.GetComponent<ButtonInfo>().itemId];
-            coinsText.text = "Coins : " + coins.ToString();
+            coinsText.text = coins.ToString();
 
 
             saveLoadManager.SavePlayerData(coins, buttonRef.GetComponent<ButtonInfo>().itemId);
