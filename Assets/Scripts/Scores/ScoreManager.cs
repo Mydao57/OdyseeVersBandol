@@ -12,19 +12,18 @@ public class ScoreManager : MonoBehaviour
 
     void Awake()
     {
-        scoreValue = 0;
+        
     }
 
     void Start()
     {
-        score = GetComponent<Text>();
-        Debug.Log(score.text);
+        scoreValue = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
-       // score.text = "Score: " + scoreValue;
+       score.text = "Score: " + scoreValue.ToString();
     }
 
     public void AddScore(int amount)
