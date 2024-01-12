@@ -6,7 +6,7 @@ public class HealthManager : MonoBehaviour
 {
     public float maxhealth;
     public float health;
-    private float damageTaken = 0f; 
+    public float damageTaken = 0f; 
 
     public Image[] hearts;
     public Sprite fullHeart;

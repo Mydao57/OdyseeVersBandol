@@ -78,6 +78,7 @@ public class PlayerController : MonoBehaviour
         }
         HealthManager healthManager = FindObjectOfType<HealthManager>();
         healthManager.health += item.heal;
+        healthManager.damageTaken -= item.heal;
         if(healthManager.health > healthManager.maxhealth)
         {
             healthManager.health = healthManager.maxhealth;
