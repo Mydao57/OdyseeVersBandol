@@ -9988,14 +9988,14 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 19.014442, y: 12.015758}
-      - {x: -19.009611, y: 12.012138}
-      - {x: -19.002872, y: 1.9946134}
+    - - {x: 34.394463, y: 22.229362}
+      - {x: -29.44685, y: 20.972994}
+      - {x: -28.214844, y: 2.026161}
       - {x: -18.002155, y: 1.9982305}
       - {x: -17.994734, y: 9.00236}
       - {x: 18.015825, y: 9.006599}
       - {x: 18.003944, y: -2.204226}
-      - {x: 19.008242, y: -2.0796604}
+      - {x: 33.474205, y: -2.79501}
   m_UseDelaunayMesh: 0
 --- !u!60 &1624653021206180126
 PolygonCollider2D:
@@ -10045,10 +10045,10 @@ PolygonCollider2D:
       - {x: 18.000416, y: -9.000529}
       - {x: -18.00115, y: -9.008312}
       - {x: -18.000162, y: -2.0000167}
-      - {x: -19.001276, y: -1.9978948}
-      - {x: -18.994255, y: -10.00258}
-      - {x: 19.012499, y: -10.00463}
-      - {x: 19.000263, y: -1.9994369}
+      - {x: -28.87591, y: -1.9977374}
+      - {x: -38.0306, y: -20.63256}
+      - {x: 29.425297, y: -22.422379}
+      - {x: 31.612038, y: -1.9994369}
   m_UseDelaunayMesh: 0
 --- !u!1 &2721361084892876947
 GameObject:
@@ -11894,14 +11894,14 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.8806095, y: 3.0813553}
-      - {x: -2.8259907, y: 3.097125}
+    - - {x: 3.4154863, y: 5.1451664}
+      - {x: -2.7417526, y: 5.0556393}
       - {x: -2.7955303, y: 2.5200694}
       - {x: -1.3889027, y: 2.5591877}
       - {x: -1.3703852, y: -2.1545439}
       - {x: -2.789268, y: -2.1893098}
-      - {x: -2.7319074, y: -2.6959994}
-      - {x: -0.9883404, y: -2.6787052}
+      - {x: -2.8161454, y: -4.928284}
+      - {x: 3.3709335, y: -4.7635756}
   m_UseDelaunayMesh: 0
 --- !u!114 &5835581656838132545
 MonoBehaviour:
@@ -11919,6 +11919,7 @@ MonoBehaviour:
   spawnPoints:
   - {fileID: 2510873159076540622}
   WallLeft: {fileID: 1675147217724997092}
+  scoreManager: {fileID: 0}
 --- !u!1 &5600800026886582063
 GameObject:
   m_ObjectHideFlags: 0
@@ -14252,6 +14253,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5781021864104890406}
     m_Modifications:
+    - target: {fileID: 1609979431169308990, guid: 3e9a5b5843afc774ab336b7df5f3dc5b, type: 3}
+      propertyPath: m_Size.x
+      value: 7.9634457
+      objectReference: {fileID: 0}
+    - target: {fileID: 1609979431169308990, guid: 3e9a5b5843afc774ab336b7df5f3dc5b, type: 3}
+      propertyPath: m_Offset.x
+      value: 15.028943
+      objectReference: {fileID: 0}
     - target: {fileID: 5063905698266090098, guid: 3e9a5b5843afc774ab336b7df5f3dc5b, type: 3}
       propertyPath: m_Name
       value: WallLeft

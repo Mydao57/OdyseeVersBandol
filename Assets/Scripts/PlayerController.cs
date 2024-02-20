@@ -7,9 +7,9 @@ public class PlayerController : MonoBehaviour
 {
     [SerializeField] private WeaponController weapon;
     private Text messageStat;
-    private float dashSpeed = 2f; // Vitesse de dash
+    private float dashRange = 2f;
     private float dashCooldown = 2f;
-    private bool canDash = true; // Indique si le joueur peut dasher
+    private bool canDash = true;
 
     void Start()
     {
@@ -36,25 +36,19 @@ public class PlayerController : MonoBehaviour
 
     void Dash()
     {
-            // Désactive la possibilité de dasher
             canDash = false;
 
-            // Enregistre la direction actuelle du joueur
             Vector3 dashDirection = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0).normalized;
 
-            // Effectue le dash
-            transform.position += dashDirection * dashSpeed;
+            transform.position += dashDirection * dashRange;
 
-            // Lance une coroutine pour réactiver la possibilité de dasher après le cooldown
             StartCoroutine(ResetDashCooldown());
     }
 
     IEnumerator ResetDashCooldown()
     {
-        // Attend le temps de cooldown du dash
         yield return new WaitForSeconds(dashCooldown);
 
-        // Réactive la possibilité de dasher
         canDash = true;
     }
 

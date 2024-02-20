@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 4637521490164172665}
   - component: {fileID: 2573083272162190490}
   - component: {fileID: 264729498371575718}
-  - component: {fileID: 5823872881783322284}
   m_Layer: 0
   m_Name: bar
   m_TagString: Untagged
@@ -390,7 +389,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -6.5014524, y: 3.2904859}
+  m_Offset: {x: -6.717721, y: 4.638755}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -401,52 +400,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 8.992676, y: 0.5893271}
-  m_EdgeRadius: 0
---- !u!61 &5823872881783322284
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 175703150103664444}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -2.5141785, y: 4.8307524}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.98391676, y: 2.4766254}
+  m_Size: {x: 9.425213, y: 3.2858639}
   m_EdgeRadius: 0
 --- !u!1 &405082839794630024
 GameObject:
@@ -4627,14 +4581,16 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 12.075374, y: 9.064247}
-      - {x: -12.009455, y: 8.961596}
-      - {x: -12.0859585, y: -6.052337}
+    - - {x: 27.663788, y: 17.650055}
+      - {x: -20.5817, y: 16.474163}
+      - {x: -22.072285, y: -8.518473}
       - {x: -11.008124, y: -6.031953}
-      - {x: -10.909958, y: 5.889248}
+      - {x: -10.99342, y: 5.0268064}
+      - {x: -2.065569, y: 4.9933004}
+      - {x: -2.0364275, y: 6.0068407}
       - {x: 10.958877, y: 5.9230876}
       - {x: 10.968925, y: -6.012062}
-      - {x: 11.996663, y: -6.013181}
+      - {x: 33.643856, y: -10.9759}
   m_UseDelaunayMesh: 0
 --- !u!483693784 &2219193194107551389
 TilemapRenderer:
@@ -4717,7 +4673,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.03894806, y: -6.5162582}
+  m_Offset: {x: 0.26494884, y: -11.013905}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -4728,7 +4684,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 24.077877, y: 0.9675865}
+  m_Size: {x: 40.97444, y: 9.962881}
   m_EdgeRadius: 0
 --- !u!1 &731179645155314603
 GameObject:
