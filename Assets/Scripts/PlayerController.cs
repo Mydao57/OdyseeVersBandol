@@ -1,16 +1,16 @@
 using System.Collections;
-using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
-
-    [SerializeField]
-    private WeaponController weapon;
+    [SerializeField] private WeaponController weapon;
     private Text messageStat;
+    private float dashSpeed = 2f; // Vitesse de dash
+    private float dashCooldown = 2f;
+    private bool canDash = true; // Indique si le joueur peut dasher
 
-    // Start is called before the first frame update
     void Start()
     {
         messageStat = GetComponentInChildren<Text>();
@@ -18,15 +18,44 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        inputHandler();
+        InputHandler();
     }
 
-    void inputHandler()
+    void InputHandler()
     {
         if (Input.GetMouseButtonDown(0))
         {
             Attack();
         }
+
+        if (Input.GetKeyDown(KeyCode.Space) && canDash)
+        {
+            Dash();
+        }
+    }
+
+    void Dash()
+    {
+            // Désactive la possibilité de dasher
+            canDash = false;
+
+            // Enregistre la direction actuelle du joueur
+            Vector3 dashDirection = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0).normalized;
+
+            // Effectue le dash
+            transform.position += dashDirection * dashSpeed;
+
+            // Lance une coroutine pour réactiver la possibilité de dasher après le cooldown
+            StartCoroutine(ResetDashCooldown());
+    }
+
+    IEnumerator ResetDashCooldown()
+    {
+        // Attend le temps de cooldown du dash
+        yield return new WaitForSeconds(dashCooldown);
+
+        // Réactive la possibilité de dasher
+        canDash = true;
     }
 
     void Attack() 
