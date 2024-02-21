@@ -10,10 +10,13 @@ public class PlayerController : MonoBehaviour
     private float dashRange = 2f;
     private float dashCooldown = 2f;
     private bool canDash = true;
+    public GameObject dashIndicatorYes;
+    public GameObject dashIndicatorNo;
 
     void Start()
     {
         messageStat = GetComponentInChildren<Text>();
+        UpdateDashIndicator();
     }
 
     void Update()
@@ -43,6 +46,7 @@ public class PlayerController : MonoBehaviour
             transform.position += dashDirection * dashRange;
 
             StartCoroutine(ResetDashCooldown());
+            UpdateDashIndicator();
     }
 
     IEnumerator ResetDashCooldown()
@@ -50,6 +54,21 @@ public class PlayerController : MonoBehaviour
         yield return new WaitForSeconds(dashCooldown);
 
         canDash = true;
+        UpdateDashIndicator();
+    }
+
+    void UpdateDashIndicator()
+    {
+        if (canDash)
+        {
+            dashIndicatorNo.SetActive(false);
+            dashIndicatorYes.SetActive(true);
+        }
+        else
+        {
+            dashIndicatorYes.SetActive(false);
+            dashIndicatorNo.SetActive(true);
+        }
     }
 
     void Attack() 
