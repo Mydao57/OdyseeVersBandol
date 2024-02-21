@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
     private bool canDash = true;
     public GameObject dashIndicatorYes;
     public GameObject dashIndicatorNo;
+    public GameObject dashPrefab;
 
     void Start()
     {
@@ -39,20 +40,25 @@ public class PlayerController : MonoBehaviour
 
     void Dash()
     {
-            canDash = false;
+        canDash = false;
 
-            Vector3 dashDirection = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0).normalized;
+        dashPrefab.transform.position = transform.position;
 
-            transform.position += dashDirection * dashRange;
+        dashPrefab.SetActive(true);
 
-            StartCoroutine(ResetDashCooldown());
-            UpdateDashIndicator();
+        Vector3 dashDirection = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0).normalized;
+
+        transform.position += dashDirection * dashRange;
+
+
+        StartCoroutine(ResetDashCooldown());
+        UpdateDashIndicator();
     }
 
     IEnumerator ResetDashCooldown()
     {
         yield return new WaitForSeconds(dashCooldown);
-
+        dashPrefab.SetActive(false);
         canDash = true;
         UpdateDashIndicator();
     }
@@ -71,18 +77,18 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    void Attack() 
+    void Attack()
     {
         Vector3 mousePosition = Input.mousePosition;
 
         Vector3 mouseWorldPosition = Camera.main.ScreenToWorldPoint(mousePosition);
-        mouseWorldPosition.z = 0; 
+        mouseWorldPosition.z = 0;
 
         Vector3 playerPosition = transform.position;
 
         Vector3 directionToMouse = mouseWorldPosition - playerPosition;
 
-    
+
         directionToMouse.Normalize();
 
         if (weapon != null)
@@ -98,13 +104,13 @@ public class PlayerController : MonoBehaviour
 
     public void PickItem(ItemController item)
     {
-        
-        if(item.movementSpeed > 0)
+
+        if (item.movementSpeed > 0)
         {
             GetComponent<PlayerMovement>().moveSpeed += item.movementSpeed;
             messageStat.text += "\n+ Vitesse de déplacement";
         }
-        
+
         if (weapon != null)
         {
             if (item.damage > 0)
@@ -121,7 +127,7 @@ public class PlayerController : MonoBehaviour
         HealthManager healthManager = FindObjectOfType<HealthManager>();
         healthManager.health += item.heal;
         healthManager.damageTaken -= item.heal;
-        if(healthManager.health > healthManager.maxhealth)
+        if (healthManager.health > healthManager.maxhealth)
         {
             healthManager.health = healthManager.maxhealth;
         }
