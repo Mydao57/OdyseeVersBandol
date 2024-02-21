@@ -10,7 +10,8 @@ public class EnemyController : MonoBehaviour
     [SerializeField] protected WeaponController weapon = null;
     [SerializeField] public float movementSpeed = 3.0f;
     [SerializeField] protected float range;
-     int coins = 2;
+    int coins = 2;
+    public GameObject[] itemsToDrop;
 
     protected float distance;
 
@@ -88,6 +89,13 @@ public class EnemyController : MonoBehaviour
             {
                 coinManager.AddCoins(coins);
             }
+        }
+
+        if (itemsToDrop.Length > 0 && Random.value <= 0.1f)
+        {
+            int randomIndex = Random.Range(0, itemsToDrop.Length);
+            GameObject randomItem = itemsToDrop[randomIndex];
+            Instantiate(randomItem, transform.position, Quaternion.identity);
         }
     }
 
