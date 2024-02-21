@@ -8,6 +8,7 @@ public class ItemController : MonoBehaviour
     public float damage = 0;
     public float cooldoownReduction = 0;
     public float heal = 0;
+    public float alcohol = 0;
 
     private bool isInRange = false;
     public KeyCode dialogueKey = KeyCode.E;
@@ -30,7 +31,6 @@ public class ItemController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("Trigger");
         if (other.CompareTag("Player"))  
         {
 
