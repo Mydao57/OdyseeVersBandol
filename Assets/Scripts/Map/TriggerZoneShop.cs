@@ -85,11 +85,8 @@ public class TriggerZoneShop : MonoBehaviour
 
     void CheckForNoItem()
     {
-        GameObject[] items = GameObject.FindGameObjectsWithTag("Item");
-
-        if (items.Length == 0)
-        {
+        
             WallRight.SetActive(false);
-        }
+        
     }
 }

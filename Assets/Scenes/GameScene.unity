@@ -1395,6 +1395,7 @@ MonoBehaviour:
   dashIndicatorYes: {fileID: 408291529}
   dashIndicatorNo: {fileID: 660109353}
   dashPrefab: {fileID: 1397402045}
+  blur: {fileID: 2100000, guid: 7c858119cc2567147a31d051bf9dc0e5, type: 2}
 --- !u!1 &1304707965 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5007728785064371553, guid: 7cf26ccd9d69cc9459a58dee62955f7a, type: 3}

@@ -35,7 +35,7 @@ Material:
     m_Floats:
     - PixelSnap: 0
     - _BlurSize: 0.05
-    - _BlurStrength: 2
+    - _BlurStrength: 0
     - _BumpAmt: 0
     - _Size: 0.9
     m_Colors:

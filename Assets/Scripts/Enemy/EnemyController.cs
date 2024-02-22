@@ -91,7 +91,7 @@ public class EnemyController : MonoBehaviour
             }
         }
 
-        if (itemsToDrop.Length > 0 && Random.value <= 0.1f)
+        if (itemsToDrop.Length > 0 && Random.value <= 1f)
         {
             int randomIndex = Random.Range(0, itemsToDrop.Length);
             GameObject randomItem = itemsToDrop[randomIndex];
