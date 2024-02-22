@@ -2,6 +2,7 @@ using System.Collections;
 using System.Threading;
 using UnityEngine;
 using UnityEngine.UI;
+using static UnityEditor.Progress;
 
 public class PlayerController : MonoBehaviour
 {
@@ -13,11 +14,21 @@ public class PlayerController : MonoBehaviour
     public GameObject dashIndicatorYes;
     public GameObject dashIndicatorNo;
     public GameObject dashPrefab;
+    [SerializeField]
+    private Material blur;
+    
+
 
     void Start()
     {
         messageStat = GetComponentInChildren<Text>();
         UpdateDashIndicator();
+        if (blur)
+        {
+            blur.SetFloat("_BlurStrength", 0);
+
+        }
+
     }
 
     void Update()
@@ -109,6 +120,17 @@ public class PlayerController : MonoBehaviour
         {
             GetComponent<PlayerMovement>().moveSpeed += item.movementSpeed;
             messageStat.text += "\n+ Vitesse de déplacement";
+        }
+
+        if(item.alcohol != 0)
+        {
+            if (blur)
+            {
+                float currentBlurStrength = blur.GetFloat("_BlurStrength");
+                float newBlurStrength = Mathf.Clamp(currentBlurStrength + item.alcohol, 0.0f, 5.0f);
+
+                blur.SetFloat("_BlurStrength", newBlurStrength);
+            }
         }
 
         if (weapon != null)

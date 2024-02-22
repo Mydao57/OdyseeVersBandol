@@ -102,6 +102,7 @@ MonoBehaviour:
   damage: 0
   cooldoownReduction: 0
   heal: 1
+  alcohol: -1
   dialogueKey: 101
 --- !u!61 &-1471237310589781172
 BoxCollider2D:
